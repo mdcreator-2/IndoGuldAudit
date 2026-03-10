@@ -1,0 +1,255 @@
+/* ============================================
+   Indo Gulf Audit — Global Stylesheet
+   ============================================ */
+
+/* --- CSS Custom Properties (Design Tokens) --- */
+:root {
+  --primary: #1a3a6b;
+  --primary-rgb: 26, 58, 107;
+  --accent-gold: #d4a843;
+  --accent-gold-rgb: 212, 168, 67;
+  --accent-teal: #00a884;
+  --accent-teal-rgb: 0, 168, 132;
+  --bg-light: #f6f7f8;
+  --bg-dark: #13181f;
+  --transition-base: 0.3s ease;
+}
+
+/* --- Global Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Geometric Background Pattern --- */
+.geometric-bg {
+  background-color: var(--bg-light);
+  background-image: radial-gradient(rgba(var(--primary-rgb), 0.13) 1px, transparent 1px),
+                    radial-gradient(rgba(var(--primary-rgb), 0.13) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
+.hero-pattern {
+  background-color: var(--primary);
+  background-image: radial-gradient(circle at 2px 2px, rgba(var(--accent-gold-rgb), 0.15) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #d4a843 0%, #f1d592 50%, #d4a843 100%);
+}
+
+/* --- Mobile Navigation Overlay --- */
+.mobile-nav-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-base), visibility var(--transition-base);
+}
+
+.mobile-nav-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+  width: 300px;
+  max-width: 85vw;
+  background: #fff;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  overflow-y: auto;
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.15);
+}
+
+.mobile-nav-panel.active {
+  transform: translateX(0);
+}
+
+.mobile-nav-panel .close-btn {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--primary);
+  padding: 0.5rem;
+}
+
+.mobile-nav-panel nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 2rem;
+}
+
+.mobile-nav-panel nav a {
+  display: block;
+  padding: 0.875rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #334155;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background var(--transition-base), color var(--transition-base);
+}
+
+.mobile-nav-panel nav a:hover,
+.mobile-nav-panel nav a.active {
+  background: rgba(var(--primary-rgb), 0.08);
+  color: var(--primary);
+}
+
+.mobile-nav-panel nav a.active {
+  font-weight: 800;
+  border-left: 3px solid var(--accent-gold);
+}
+
+.mobile-nav-panel .mobile-cta {
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
+
+/* --- Desktop Nav Active State --- */
+header nav a.active {
+  color: var(--accent-gold) !important;
+  position: relative;
+}
+
+header nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent-gold);
+  border-radius: 1px;
+}
+
+/* --- Fade-In on Scroll Animation --- */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Service Card Hover Bottom Bar (used in homepage) --- */
+.service-card-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: var(--accent-teal);
+  transition: width var(--transition-base);
+}
+
+.group:hover .service-card-bar {
+  width: 100%;
+}
+
+/* --- Counter Animation --- */
+.counter-value {
+  display: inline-block;
+}
+
+/* --- FAQ Accordion --- */
+.faq-item .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding-top: 0;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 300px;
+  padding-top: 1rem;
+}
+
+.faq-item .faq-icon {
+  transition: transform var(--transition-base);
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* --- Form Success Message --- */
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 2rem;
+}
+
+.form-success.show {
+  display: block;
+}
+
+.form-success .success-icon {
+  font-size: 4rem;
+  color: var(--accent-teal);
+  margin-bottom: 1rem;
+}
+
+/* --- Utility: Stagger animation delays for cards --- */
+.stagger-1 { transition-delay: 0.1s; }
+.stagger-2 { transition-delay: 0.2s; }
+.stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
+.stagger-5 { transition-delay: 0.5s; }
+
+/* --- Button hover lift effect --- */
+.btn-lift {
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.btn-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Scrollbar (subtle) --- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(var(--primary-rgb), 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(var(--primary-rgb), 0.5);
+}

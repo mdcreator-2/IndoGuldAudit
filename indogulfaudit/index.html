@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Indo Gulf Audit | Trust &amp; Technology</title>
+    <title>Indo Gulf Audit | Trusted Accounting & Tax Consultancy in UAE</title>
+    <meta name="description"
+        content="Indo Gulf Audit — Leading audit, accounting, VAT filing & corporate tax consultancy in Dubai, UAE. 15+ years of trust. Book a free consultation today." />
+    <meta name="keywords"
+        content="Dubai accounting, UAE audit firm, VAT filing UAE, Corporate Tax UAE, bookkeeping Dubai, tax consultancy Dubai" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Indo Gulf Audit | Trusted Accounting & Tax Consultancy in UAE" />
+    <meta property="og:description"
+        content="Elevating financial integrity through precision auditing. Your partner in UAE compliance and strategic growth." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://indogulfaudit.com/" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script id="tailwind-config">
+    <script>
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -22,114 +31,131 @@
                     colors: {
                         "primary": "#1a3a6b",
                         "secondary": "#d4a843",
+                        "accent-gold": "#d4a843",
                         "accent-teal": "#00a884",
                         "background-light": "#f6f7f8",
                         "background-dark": "#13181f",
                     },
-                    fontFamily: {
-                        "display": ["Inter", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
+                    fontFamily: { "display": ["Inter", "sans-serif"] },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
                 },
             },
         }
     </script>
-    <style>
-        .geometric-bg {
-            background-color: #f6f7f8;
-            background-image: radial-gradient(#1a3a6b22 1px, transparent 1px), radial-gradient(#1a3a6b22 1px, transparent 1px);
-            background-size: 40px 40px;
-            background-position: 0 0, 20px 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body
-    class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 overflow-x-hidden">
-    <!-- Top Navigation Bar -->
-    <header
-        class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10">
+<body class="font-display bg-background-light text-slate-900 overflow-x-hidden">
+
+    <!-- ========== UNIFIED NAVIGATION ========== -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-primary/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <div class="flex items-center gap-2">
-                    <div class="text-primary dark:text-white">
-                        <svg class="size-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                            <path clip-rule="evenodd"
-                                d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z"
-                                fill="currentColor" fill-rule="evenodd"></path>
-                            <path clip-rule="evenodd"
-                                d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"
-                                fill="currentColor" fill-rule="evenodd"></path>
-                        </svg>
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-primary flex items-center justify-center rounded-lg text-white">
+                        <span class="material-symbols-outlined text-2xl">account_balance</span>
                     </div>
-                    <span class="text-xl font-extrabold tracking-tight text-primary">Indo Gulf Audit</span>
-                </div>
-                <nav class="hidden md:flex items-center gap-8">
-                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Services</a>
-                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="#">About Us</a>
-                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Industries</a>
-                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Contact</a>
+                    <div class="flex flex-col leading-none">
+                        <span class="text-primary font-black text-xl tracking-tight">INDO GULF</span>
+                        <span class="text-accent-gold font-bold text-[10px] tracking-[0.2em] uppercase">Audit &
+                            Advisory</span>
+                    </div>
+                </a>
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a data-nav-link class="text-sm font-semibold hover:text-accent-gold transition-colors"
+                        href="index.html">Home</a>
+                    <a data-nav-link class="text-sm font-semibold hover:text-accent-gold transition-colors"
+                        href="uae-services.html">UAE Services</a>
+                    <a data-nav-link class="text-sm font-semibold hover:text-accent-gold transition-colors"
+                        href="audit-outsourcing.html">Audit Firm Outsourcing</a>
+                    <a data-nav-link class="text-sm font-semibold hover:text-accent-gold transition-colors"
+                        href="company-formation.html">Company Formation</a>
+                    <a data-nav-link class="text-sm font-semibold hover:text-accent-gold transition-colors"
+                        href="about.html">About Us</a>
+                    <a data-nav-link class="text-sm font-semibold hover:text-accent-gold transition-colors"
+                        href="contact.html">Contact Us</a>
                 </nav>
                 <div class="flex items-center gap-4">
-                    <button
-                        class="hidden sm:flex bg-accent-teal hover:bg-accent-teal/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-accent-teal/20">
-                        Get a Quote
-                    </button>
-                    <button class="md:hidden text-primary">
-                        <span class="material-symbols-outlined">menu</span>
+                    <a href="contact.html"
+                        class="hidden sm:flex bg-accent-teal hover:bg-accent-teal/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-accent-teal/20 btn-lift">
+                        Book Free Consultation
+                    </a>
+                    <button id="menu-toggle" class="lg:hidden text-primary p-1">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
                     </button>
                 </div>
             </div>
         </div>
     </header>
-    <!-- Hero Section -->
+
+    <!-- Mobile Nav Overlay -->
+    <div id="mobile-overlay" class="mobile-nav-overlay"></div>
+    <div id="mobile-panel" class="mobile-nav-panel">
+        <button id="menu-close" class="close-btn">
+            <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="uae-services.html">UAE Services</a>
+            <a href="audit-outsourcing.html">Audit Firm Outsourcing</a>
+            <a href="company-formation.html">Company Formation</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="mobile-cta">
+            <a href="contact.html"
+                class="block w-full text-center bg-accent-teal text-white px-6 py-3 rounded-lg text-sm font-bold">
+                Book Free Consultation
+            </a>
+        </div>
+    </div>
+
+    <!-- ========== HERO SECTION ========== -->
     <section
         class="relative min-h-[600px] flex items-center geometric-bg px-4 overflow-hidden border-b border-primary/5">
         <div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 transform translate-x-20"></div>
         <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
-            <div class="flex flex-col gap-8">
+            <div class="flex flex-col gap-8 fade-in-up">
                 <div class="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full w-fit">
                     <span class="material-symbols-outlined text-sm">verified_user</span>
                     <span class="text-xs font-bold uppercase tracking-widest">Global Audit Standards</span>
                 </div>
                 <h1 class="text-5xl lg:text-7xl font-black text-primary leading-[1.1] tracking-tighter">
-                    Trust &amp; <span class="text-secondary">Technology</span> in Auditing.
+                    Trust & <span class="text-secondary">Technology</span> in Auditing.
                 </h1>
-                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
+                <p class="text-lg text-slate-600 max-w-xl leading-relaxed">
                     Elevating financial integrity through structured data precision and advanced analytical frameworks.
                     Your partner in global compliance and strategic growth.
                 </p>
                 <div class="flex flex-wrap gap-4">
-                    <button
-                        class="px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-all flex items-center gap-2">
+                    <a href="uae-services.html"
+                        class="px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-all flex items-center gap-2 btn-lift">
                         View Our Services <span class="material-symbols-outlined">arrow_forward</span>
-                    </button>
-                    <button
+                    </a>
+                    <a href="about.html"
                         class="px-8 py-4 bg-white border-2 border-primary/10 text-primary font-bold rounded-lg hover:border-primary/20 transition-all">
                         Learn More
-                    </button>
+                    </a>
                 </div>
             </div>
-            <div class="hidden lg:block relative h-[500px]">
+            <div class="hidden lg:block relative h-[500px] fade-in-up stagger-2">
                 <div class="absolute inset-0 bg-primary/10 rounded-3xl -rotate-3"></div>
                 <img class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500"
-                    data-alt="Abstract blueprint and data visualization overlay"
+                    alt="Abstract blueprint and data visualization overlay"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPc2IUvVOgk0uF9pdPXv7VkfHLuLbZwcDQa8XelwixmNNxGK6EZ3ZqVSRVBunh_Gs-yRh87SvsM0Aj9I5oVMZMcegHcadyqjKuhYBC1eq_UM5GPvcNLPk_8wGa7yhHy06Sz6ySAPu-2N5lS62qZYEyhpidZhy6U-NgisKbGAkFY_WuyoihZ4z1NcQRq_UmoJx8rzqW9fMH2Xqe2-fqJRP_47r9Hqz6gU31He1WOt8V7XeJ-8GkDxUN4gEs0ULuSFKC4nQZI1XDyfI" />
             </div>
         </div>
     </section>
-    <!-- Services Grid -->
-    <section class="py-24 px-4 bg-white dark:bg-background-dark">
+
+    <!-- ========== SERVICES GRID ========== -->
+    <section class="py-24 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 fade-in-up">
                 <div class="max-w-2xl">
                     <h2 class="text-primary text-sm font-bold uppercase tracking-[0.3em] mb-4">Core Expertise</h2>
-                    <h3 class="text-4xl font-extrabold text-slate-900 dark:text-white leading-tight">
+                    <h3 class="text-4xl font-extrabold text-slate-900 leading-tight">
                         Precision Auditing Services for Modern Enterprises
                     </h3>
                 </div>
@@ -141,10 +167,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Service 1 -->
                 <div
-                    class="group p-8 rounded-xl border border-primary/5 bg-slate-50 hover:bg-white hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 relative overflow-hidden">
-                    <div
-                        class="absolute bottom-0 left-0 h-1 w-0 bg-accent-teal group-hover:w-full transition-all duration-300">
-                    </div>
+                    class="group p-8 rounded-xl border border-primary/5 bg-slate-50 hover:bg-white hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 relative overflow-hidden fade-in-up stagger-1">
+                    <div class="service-card-bar"></div>
                     <div
                         class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                         <span class="material-symbols-outlined text-3xl">account_balance</span>
@@ -153,16 +177,14 @@
                     <p class="text-slate-500 text-sm leading-relaxed mb-6">Rigorous compliance reporting adhering to
                         international financial standards.</p>
                     <a class="text-accent-teal font-bold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all"
-                        href="#">
+                        href="uae-services.html">
                         Details <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
                     </a>
                 </div>
                 <!-- Service 2 -->
                 <div
-                    class="group p-8 rounded-xl border border-primary/5 bg-slate-50 hover:bg-white hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 relative overflow-hidden">
-                    <div
-                        class="absolute bottom-0 left-0 h-1 w-0 bg-accent-teal group-hover:w-full transition-all duration-300">
-                    </div>
+                    class="group p-8 rounded-xl border border-primary/5 bg-slate-50 hover:bg-white hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 relative overflow-hidden fade-in-up stagger-2">
+                    <div class="service-card-bar"></div>
                     <div
                         class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                         <span class="material-symbols-outlined text-3xl">query_stats</span>
@@ -171,16 +193,14 @@
                     <p class="text-slate-500 text-sm leading-relaxed mb-6">Optimizing internal controls and operational
                         efficiency through data.</p>
                     <a class="text-accent-teal font-bold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all"
-                        href="#">
+                        href="uae-services.html">
                         Details <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
                     </a>
                 </div>
                 <!-- Service 3 -->
                 <div
-                    class="group p-8 rounded-xl border border-primary/5 bg-slate-50 hover:bg-white hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 relative overflow-hidden">
-                    <div
-                        class="absolute bottom-0 left-0 h-1 w-0 bg-accent-teal group-hover:w-full transition-all duration-300">
-                    </div>
+                    class="group p-8 rounded-xl border border-primary/5 bg-slate-50 hover:bg-white hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 relative overflow-hidden fade-in-up stagger-3">
+                    <div class="service-card-bar"></div>
                     <div
                         class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                         <span class="material-symbols-outlined text-3xl">receipt_long</span>
@@ -189,16 +209,14 @@
                     <p class="text-slate-500 text-sm leading-relaxed mb-6">Strategic planning and local compliance for
                         global tax frameworks.</p>
                     <a class="text-accent-teal font-bold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all"
-                        href="#">
+                        href="uae-services.html">
                         Details <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
                     </a>
                 </div>
                 <!-- Service 4 -->
                 <div
-                    class="group p-8 rounded-xl border border-primary/5 bg-slate-50 hover:bg-white hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 relative overflow-hidden">
-                    <div
-                        class="absolute bottom-0 left-0 h-1 w-0 bg-accent-teal group-hover:w-full transition-all duration-300">
-                    </div>
+                    class="group p-8 rounded-xl border border-primary/5 bg-slate-50 hover:bg-white hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 relative overflow-hidden fade-in-up stagger-4">
+                    <div class="service-card-bar"></div>
                     <div
                         class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                         <span class="material-symbols-outlined text-3xl">shield_with_heart</span>
@@ -207,21 +225,22 @@
                     <p class="text-slate-500 text-sm leading-relaxed mb-6">Mitigating business vulnerabilities with
                         predictive risk modeling.</p>
                     <a class="text-accent-teal font-bold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all"
-                        href="#">
+                        href="uae-services.html">
                         Details <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Why Us Section -->
+
+    <!-- ========== WHY US SECTION ========== -->
     <section class="py-24 px-4 bg-background-light">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
-            <div class="relative">
+            <div class="relative fade-in-up">
                 <div class="grid grid-cols-2 gap-4">
                     <div class="space-y-4">
                         <img class="rounded-xl w-full h-64 object-cover shadow-lg"
-                            data-alt="Two professionals reviewing business documents"
+                            alt="Two professionals reviewing business documents"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdYxhN4EVMclfD7N74Q7L0HILnIodpSY2xdi8_I3Y5LRhg1Yyqb0W56-higXeR-jpKlPgpqJ1HejgBo6S33pToN7VaCOfblGGQAQ7I79-V52vd5W5C6OIPPvEaYPGhfEGxf5VyZU49_2_TJS8bWdGCab7D_RrOohLPtQyXBUPmyNv6hlMbDc5yjl6XLgcusgZkrf2JbNPMjWXVqxVa4lD1i4mxkz2iyBS60tcZd1GCIwMLU8QByyekt9FTCsdQ-Z5YEwdxjwXt6CU" />
                         <div class="bg-primary p-8 rounded-xl text-white">
                             <span class="text-4xl font-black block mb-2">15+</span>
@@ -234,12 +253,12 @@
                             <p class="text-sm font-medium opacity-80 uppercase tracking-widest">Global Clients</p>
                         </div>
                         <img class="rounded-xl w-full h-64 object-cover shadow-lg"
-                            data-alt="Business meeting in a modern office"
+                            alt="Business meeting in a modern office"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDJszU1A8EcMOZEiTmlLCNCipzJR3EKzN1JaeD7gHrkdEICVdr-bTs3-FVHUVTHePK7gnZkjhht0vfIILI0vPf1rQMsFEOlvkPHS8ebvNCDTwAzrHeAbzQfPu1YkbbWY80jQWNW3udEMpZ4RwRxhBroNwqEWBx5ifvnYZ5AJQsEMpwzzs15tIPZUnPiEXzNSaM97bhjVzKje7oFjSqf6liOqZ22d6xcuAyXFYhMP0UmSRxCVNvI0_-r_RVB3T0pNoq183uxy0Mxek" />
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-10">
+            <div class="flex flex-col gap-10 fade-in-up stagger-2">
                 <div>
                     <h2 class="text-primary text-sm font-bold uppercase tracking-[0.3em] mb-4">Why Choose Us</h2>
                     <h3 class="text-4xl font-extrabold text-slate-900 leading-tight mb-6">Built on Foundation of
@@ -280,9 +299,10 @@
             </div>
         </div>
     </section>
-    <!-- CTA Banner -->
+
+    <!-- ========== CTA BANNER ========== -->
     <section class="bg-primary py-20 px-4">
-        <div class="max-w-5xl mx-auto text-center">
+        <div class="max-w-5xl mx-auto text-center fade-in-up">
             <h2 class="text-3xl md:text-5xl font-extrabold text-secondary mb-8 leading-tight">
                 Ready to transform your financial reporting with precision technology?
             </h2>
@@ -290,102 +310,90 @@
                 Schedule a consultation with our senior partners today and discover the Indo Gulf difference.
             </p>
             <div class="flex flex-wrap justify-center gap-6">
-                <button
-                    class="px-10 py-5 bg-accent-teal text-white font-black rounded-lg shadow-xl shadow-accent-teal/30 hover:-translate-y-1 transition-all">
+                <a href="contact.html"
+                    class="px-10 py-5 bg-accent-teal text-white font-black rounded-lg shadow-xl shadow-accent-teal/30 hover:-translate-y-1 transition-all btn-lift">
                     Request a Proposal
-                </button>
-                <button
+                </a>
+                <a href="contact.html"
                     class="px-10 py-5 bg-white/10 border border-white/20 text-white font-black rounded-lg backdrop-blur-sm hover:bg-white/20 transition-all">
                     Contact Sales
-                </button>
+                </a>
             </div>
         </div>
     </section>
-    <!-- Footer -->
-    <footer class="bg-white border-t border-primary/5 pt-20 pb-10 px-4">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-            <div class="col-span-1 lg:col-span-1">
-                <div class="flex items-center gap-2 mb-8">
-                    <div class="text-primary">
-                        <svg class="size-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                            <path clip-rule="evenodd"
-                                d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z"
-                                fill="currentColor" fill-rule="evenodd"></path>
-                            <path clip-rule="evenodd"
-                                d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"
-                                fill="currentColor" fill-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                    <span class="text-lg font-extrabold tracking-tight text-primary">Indo Gulf Audit</span>
-                </div>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6">
-                    A global leader in audit, tax, and advisory services. Powered by technology, driven by trust.
-                </p>
-                <div class="flex gap-4">
-                    <a class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
-                        href="#">
-                        <span class="material-symbols-outlined text-sm">share</span>
+
+    <!-- ========== UNIFIED FOOTER ========== -->
+    <footer class="bg-slate-900 pt-20 pb-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-4 gap-12 mb-16">
+                <!-- Logo & Tagline -->
+                <div class="space-y-6">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-primary flex items-center justify-center rounded">
+                            <span class="material-symbols-outlined text-white text-xl">account_balance</span>
+                        </div>
+                        <span class="text-white font-black text-lg tracking-tight">INDO GULF</span>
                     </a>
-                    <a class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
-                        href="#">
-                        <span class="material-symbols-outlined text-sm">alternate_email</span>
-                    </a>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        A global leader in audit, tax, and advisory services. Powered by technology, driven by trust.
+                    </p>
+                    <p class="text-slate-500 text-xs italic">
+                        Cross-border support team with offices in UAE & India
+                    </p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h5 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Quick Links</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a class="hover:text-accent-gold transition-colors" href="index.html">Home</a></li>
+                        <li><a class="hover:text-accent-gold transition-colors" href="about.html">About Us</a></li>
+                        <li><a class="hover:text-accent-gold transition-colors" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Services -->
+                <div>
+                    <h5 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Services</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a class="hover:text-accent-gold transition-colors" href="uae-services.html">UAE
+                                Services</a></li>
+                        <li><a class="hover:text-accent-gold transition-colors" href="audit-outsourcing.html">Audit
+                                Outsourcing</a></li>
+                        <li><a class="hover:text-accent-gold transition-colors" href="company-formation.html">Company
+                                Formation</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div>
+                    <h5 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Contact</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-accent-gold text-sm">mail</span>
+                            <a href="mailto:khalid@indogulfaudit.com"
+                                class="hover:text-white transition-colors">khalid@indogulfaudit.com</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-accent-gold text-sm">mail</span>
+                            <a href="mailto:sales@indogulfaudit.com"
+                                class="hover:text-white transition-colors">sales@indogulfaudit.com</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-accent-gold text-sm">location_on</span>
+                            <span>Dubai, United Arab Emirates</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div>
-                <h5 class="text-primary font-bold mb-8 uppercase tracking-widest text-xs">Services</h5>
-                <ul class="space-y-4">
-                    <li><a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Statutory
-                            Audit</a></li>
-                    <li><a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Internal
-                            Audit</a></li>
-                    <li><a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Tax Advisory</a>
-                    </li>
-                    <li><a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Forensic
-                            Audit</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="text-primary font-bold mb-8 uppercase tracking-widest text-xs">Company</h5>
-                <ul class="space-y-4">
-                    <li><a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">About Us</a>
-                    </li>
-                    <li><a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Our Team</a>
-                    </li>
-                    <li><a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Careers</a></li>
-                    <li><a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Insights</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="text-primary font-bold mb-8 uppercase tracking-widest text-xs">Contact</h5>
-                <ul class="space-y-4">
-                    <li class="flex gap-3 text-sm text-slate-500">
-                        <span class="material-symbols-outlined text-primary text-sm">location_on</span>
-                        <span>Level 12, Financial Center, Dubai, UAE</span>
-                    </li>
-                    <li class="flex gap-3 text-sm text-slate-500">
-                        <span class="material-symbols-outlined text-primary text-sm">call</span>
-                        <span>+971 4 000 0000</span>
-                    </li>
-                    <li class="flex gap-3 text-sm text-slate-500">
-                        <span class="material-symbols-outlined text-primary text-sm">mail</span>
-                        <span>info@indogulfaudit.com</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div
-            class="max-w-7xl mx-auto pt-10 border-t border-primary/5 flex flex-col md:flex-row justify-between items-center gap-6">
-            <p class="text-xs text-slate-400">
-                © 2024 Indo Gulf Audit. All rights reserved.
-            </p>
-            <div class="flex gap-8">
-                <a class="text-xs text-slate-400 hover:text-primary transition-colors" href="#">Privacy Policy</a>
-                <a class="text-xs text-slate-400 hover:text-primary transition-colors" href="#">Terms of Service</a>
+            <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-slate-500 text-xs">© 2024 Indo Gulf Audit. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a class="text-slate-500 hover:text-white transition-colors text-xs" href="#">Privacy Policy</a>
+                    <a class="text-slate-500 hover:text-white transition-colors text-xs" href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

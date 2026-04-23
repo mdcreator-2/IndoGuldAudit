@@ -1,365 +1,530 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>UAE Accounting & Tax Services | Indo Gulf Audit</title>
-    <meta name="description"
-        content="Expert UAE accounting, VAT filing, corporate tax compliance, bookkeeping & internal audit services in Dubai. Trusted by 500+ businesses. Get a free consultation." />
-    <meta name="keywords"
-        content="UAE VAT filing, Corporate Tax UAE, bookkeeping Dubai, internal audit UAE, tax consultancy Dubai, IFRS compliance" />
-    <meta property="og:title" content="UAE Accounting & Tax Services | Indo Gulf Audit" />
-    <meta property="og:description"
-        content="Strategic financial guidance tailored for the evolving UAE tax landscape. Precision in every decimal point." />
-    <meta property="og:type" content="website" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        rel="stylesheet" />
+    <title>UAE Services | Indo Gulf Audit</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
-                    colors: {
-                        "primary": "#1a3a6b",
-                        "accent-gold": "#d4a843",
-                        "accent-teal": "#00a884",
-                        "background-light": "#f6f7f8",
-                        "background-dark": "#13181f",
+                    "colors": {
+                        "surface-container-low": "#f1f4f6",
+                        "on-primary-fixed": "#001f28",
+                        "secondary-fixed": "#dee1ff",
+                        "on-surface-variant": "#3e484d",
+                        "surface": "#f6fafc",
+                        "error": "#CF2E2E",
+                        "primary-container": "#087f9c",
+                        "surface-dim": "#d7dadd",
+                        "on-tertiary-container": "#fffbff",
+                        "success": "#61CE70",
+                        "on-primary-container": "#fafdff",
+                        "accent-purple": "#7A00DF",
+                        "border-light": "#DDDDDD",
+                        "accent-teal": "#079B95",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#b7eaff",
+                        "inverse-surface": "#2d3133",
+                        "surface-modal": "#FFFFFF",
+                        "primary-teal": "#1985A2",
+                        "warning": "#FCB900",
+                        "tertiary-fixed": "#ffdcc1",
+                        "surface-variant": "#dfe3e5",
+                        "primary-navy": "#1994C3",
+                        "surface-tint": "#00677f",
+                        "on-primary": "#ffffff",
+                        "secondary": "#4357b5",
+                        "on-secondary-container": "#142c8b",
+                        "on-secondary-fixed-variant": "#283e9b",
+                        "outline": "#6f797d",
+                        "outline-variant": "#bec8cd",
+                        "on-tertiary-fixed": "#2e1500",
+                        "on-error": "#ffffff",
+                        "secondary-gray": "#6C757D",
+                        "primary": "#00647c",
+                        "background": "#f6fafc",
+                        "secondary-fixed-dim": "#b9c3ff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#a66524",
+                        "surface-container-highest": "#dfe3e5",
+                        "on-tertiary-fixed-variant": "#6c3a00",
+                        "inverse-primary": "#79d2f2",
+                        "surface-container": "#ebeef1",
+                        "tertiary": "#884d0a",
+                        "on-background": "#181c1e",
+                        "on-surface": "#181c1e",
+                        "accent-blue": "#007BFF",
+                        "on-secondary-fixed": "#001258",
+                        "tertiary-fixed-dim": "#ffb778",
+                        "near-black": "#080808",
+                        "dark-gray": "#1D1D1D",
+                        "cta-blue": "#4054B2",
+                        "surface-container-high": "#e5e9eb",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f6fafc",
+                        "inverse-on-surface": "#eef1f3",
+                        "secondary-container": "#879afd",
+                        "on-primary-fixed-variant": "#004e60",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#79d2f2"
                     },
-                    fontFamily: { "display": ["Inter", "sans-serif"] },
-                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sm": "8px",
+                        "jumbo": "72px",
+                        "xs": "4px",
+                        "md": "16px",
+                        "gutter": "16px",
+                        "xl": "32px",
+                        "massive": "136px",
+                        "max_width": "1440px",
+                        "lg": "20px",
+                        "sm-md": "12px",
+                        "base": "4px"
+                    },
+                    "fontFamily": {
+                        "h5-subheading": [
+                            "Verdana"
+                        ],
+                        "list-item": [
+                            "Verdana"
+                        ],
+                        "caption": [
+                            "Verdana"
+                        ],
+                        "ui-label": [
+                            "Verdana"
+                        ],
+                        "body-large": [
+                            "Verdana"
+                        ],
+                        "h1-display": [
+                            "Verdana"
+                        ],
+                        "input-text": [
+                            "Verdana"
+                        ],
+                        "button-text": [
+                            "Verdana"
+                        ],
+                        "h2-heading": [
+                            "Verdana"
+                        ],
+                        "body-regular": [
+                            "Verdana"
+                        ]
+                    },
+                    "fontSize": {
+                        "h5-subheading": [
+                            "28px",
+                            {
+                                "lineHeight": "56px",
+                                "letterSpacing": "0px",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "list-item": [
+                            "18px",
+                            {
+                                "lineHeight": "36px",
+                                "letterSpacing": "0px",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "caption": [
+                            "24px",
+                            {
+                                "lineHeight": "26.4px",
+                                "letterSpacing": "0px",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "ui-label": [
+                            "15px",
+                            {
+                                "lineHeight": "30px",
+                                "letterSpacing": "0px",
+                                "fontWeight": "501"
+                            }
+                        ],
+                        "body-large": [
+                            "20px",
+                            {
+                                "lineHeight": "40px",
+                                "letterSpacing": "0px",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "h1-display": [
+                            "30px",
+                            {
+                                "lineHeight": "36px",
+                                "letterSpacing": "0px",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "input-text": [
+                            "15px",
+                            {
+                                "lineHeight": "17.25px",
+                                "letterSpacing": "0px",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "button-text": [
+                            "18px",
+                            {
+                                "lineHeight": "36px",
+                                "letterSpacing": "0px",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "h2-heading": [
+                            "30px",
+                            {
+                                "lineHeight": "33px",
+                                "letterSpacing": "0px",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "body-regular": [
+                            "18px",
+                            {
+                                "lineHeight": "36px",
+                                "letterSpacing": "0px",
+                                "fontWeight": "400"
+                            }
+                        ]
+                    }
                 },
             },
         }
     </script>
-    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="font-display bg-background-light text-slate-900 overflow-x-hidden">
-
-    <!-- ========== UNIFIED NAVIGATION ========== -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-primary/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <a href="index.html" class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-primary flex items-center justify-center rounded-lg text-white">
-                        <span class="material-symbols-outlined text-2xl">account_balance</span>
-                    </div>
-                    <div class="flex flex-col leading-none">
-                        <span class="text-primary font-black text-xl tracking-tight">INDO GULF</span>
-                        <span class="text-accent-gold font-bold text-[10px] tracking-[0.2em] uppercase">Audit &
-                            Advisory</span>
-                    </div>
-                </a>
-                <nav class="hidden lg:flex items-center gap-8">
-                    <a data-nav-link class="text-sm font-semibold hover:text-accent-gold transition-colors"
-                        href="index.html">Home</a>
-                    <a data-nav-link class="text-sm font-semibold hover:text-accent-gold transition-colors"
-                        href="uae-services.html">UAE Services</a>
-                    <a data-nav-link class="text-sm font-semibold hover:text-accent-gold transition-colors"
-                        href="audit-outsourcing.html">Audit Firm Outsourcing</a>
-                    <a data-nav-link class="text-sm font-semibold hover:text-accent-gold transition-colors"
-                        href="company-formation.html">Company Formation</a>
-                    <a data-nav-link class="text-sm font-semibold hover:text-accent-gold transition-colors"
-                        href="about.html">About Us</a>
-                    <a data-nav-link class="text-sm font-semibold hover:text-accent-gold transition-colors"
-                        href="contact.html">Contact Us</a>
-                </nav>
-                <div class="flex items-center gap-4">
-                    <a href="contact.html"
-                        class="hidden sm:flex bg-accent-teal hover:bg-accent-teal/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-accent-teal/20 btn-lift">
-                        Book Free Consultation
-                    </a>
-                    <button id="menu-toggle" class="lg:hidden text-primary p-1">
-                        <span class="material-symbols-outlined text-3xl">menu</span>
+<body class="bg-background text-on-surface font-body-regular overflow-x-hidden">
+    <!-- TopAppBar -->
+    <header
+        class="bg-white dark:bg-slate-900 font-['Work_Sans'] text-base tracking-tight top-0 w-full h-[80px] border-b border-gray-100 dark:border-gray-800 z-50 fixed">
+        <div class="flex justify-between items-center px-8 w-full max-w-[1440px] mx-auto h-full">
+            <div class="text-2xl font-bold text-[#4054B2] dark:text-white">Indo Gulf Audit</div>
+            <nav class="hidden md:flex gap-8 items-center h-full">
+                <a class="text-[#1985A2] font-semibold border-b-2 border-[#1985A2] h-full flex items-center transition-all opacity-80 duration-200"
+                    href="#">Services</a>
+                <a class="text-gray-600 dark:text-gray-400 hover:text-[#1985A2] transition-colors duration-200 h-full flex items-center"
+                    href="#">Corporate Tax</a>
+                <a class="text-gray-600 dark:text-gray-400 hover:text-[#1985A2] transition-colors duration-200 h-full flex items-center"
+                    href="#">VAT</a>
+                <a class="text-gray-600 dark:text-gray-400 hover:text-[#1985A2] transition-colors duration-200 h-full flex items-center"
+                    href="#">Audit</a>
+                <a class="text-gray-600 dark:text-gray-400 hover:text-[#1985A2] transition-colors duration-200 h-full flex items-center"
+                    href="#">About Us</a>
+                <a class="text-gray-600 dark:text-gray-400 hover:text-[#1985A2] transition-colors duration-200 h-full flex items-center"
+                    href="#">Contact</a>
+            </nav>
+            <button
+                class="hidden md:flex bg-[#4054B2] text-white px-[40px] py-[12px] h-[58px] items-center justify-center rounded-[5px] font-button-text text-button-text hover:bg-opacity-90 transition-all">
+                Free Consultation
+            </button>
+            <button class="md:hidden flex items-center justify-center w-[44px] h-[44px]">
+                <span class="material-symbols-outlined text-2xl text-[#1985A2]">menu</span>
+            </button>
+        </div>
+    </header>
+    <main class="pt-[80px]">
+        <!-- 1. Hero -->
+        <section
+            class="relative w-full max-w-max_width mx-auto px-gutter md:px-xl py-jumbo md:py-massive overflow-hidden min-h-[819px] flex items-center">
+            <div class="absolute inset-0 -z-10">
+                <img alt="Dubai Skyline" class="w-full h-full object-cover opacity-20"
+                    data-alt="Dubai skyline at twilight with modern skyscrapers reflecting light over calm waters"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuClIvgnVAPXHsbsu7U7qTA7ml4G10Kvv39e6yHxPXePkbiID5IopfCkQcc7SVnhNayAq4dwmwz2ux9l5CJcd8tCM2-LEjqc_STWPnwM2nYAok9AD0grzkKpVys3DKdyxnakeZ9B7RQMYrFtld4_PlP3R62x4up2dUolJ_JKjjXkOGSJ8SvIxxbsKDAPP0lBSoE7LuCH6rhNUBHwZnOwlP7f00mwf1RPtlgUhmk8Ow7EG2OlJ72ALnglUZvQBTyvM93eb-DvqH-jLoc" />
+                <div class="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-transparent"></div>
+            </div>
+            <div class="max-w-3xl space-y-md">
+                <div
+                    class="inline-flex items-center gap-2 bg-primary-container/10 px-md py-xs rounded-full border border-primary-teal/20">
+                    <span class="material-symbols-outlined text-primary-teal text-sm" data-icon="verified"
+                        data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+                    <span class="font-ui-label text-ui-label text-primary-teal">UAE Compliance Experts</span>
+                </div>
+                <h1 class="font-h1-display text-h1-display text-on-surface md:text-[56px] md:leading-[64px]">
+                    Precision in every <br />
+                    <span class="text-primary-teal">decimal point.</span>
+                </h1>
+                <p class="font-body-large text-body-large text-on-surface-variant max-w-2xl">
+                    Navigating the UAE's evolving tax landscape requires unparalleled accuracy. We provide comprehensive
+                    audit, bookkeeping, and tax compliance services tailored for global standards.
+                </p>
+                <div class="flex flex-wrap gap-sm pt-sm">
+                    <button
+                        class="bg-cta-blue text-white px-[40px] h-[58px] rounded-[5px] font-button-text text-button-text hover:bg-opacity-90 transition-all flex items-center justify-center">
+                        Book a Consultation
+                    </button>
+                    <button
+                        class="bg-transparent border border-on-surface text-on-surface px-[40px] h-[58px] rounded-none font-button-text text-button-text hover:bg-surface-container-low transition-all flex items-center justify-center">
+                        View Services
                     </button>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <div id="mobile-overlay" class="mobile-nav-overlay"></div>
-    <div id="mobile-panel" class="mobile-nav-panel">
-        <button id="menu-close" class="close-btn"><span class="material-symbols-outlined text-3xl">close</span></button>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="uae-services.html">UAE Services</a>
-            <a href="audit-outsourcing.html">Audit Firm Outsourcing</a>
-            <a href="company-formation.html">Company Formation</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-        <div class="mobile-cta">
-            <a href="contact.html"
-                class="block w-full text-center bg-accent-teal text-white px-6 py-3 rounded-lg text-sm font-bold">Book
-                Free Consultation</a>
-        </div>
-    </div>
-
-    <!-- ========== HERO SECTION ========== -->
-    <section class="relative px-6 py-24 md:py-32">
-        <div class="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div class="flex flex-col gap-8 fade-in-up">
-                <span
-                    class="inline-block w-fit rounded-full bg-primary/10 px-4 py-1 text-xs font-bold uppercase tracking-widest text-primary">UAE
-                    Compliance Experts</span>
-                <h1 class="text-5xl md:text-7xl font-black leading-[1.1] tracking-tighter text-slate-900">
-                    Precision in every <span class="text-primary">decimal point.</span>
-                </h1>
-                <p class="max-w-xl text-lg leading-relaxed text-slate-600">
-                    Strategic financial guidance tailored for the evolving UAE tax landscape. We ensure your business
-                    remains compliant, efficient, and ready for growth.
-                </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="contact.html"
-                        class="rounded-lg bg-primary px-8 py-4 text-base font-bold text-white shadow-lg shadow-primary/20 btn-lift">
-                        Book a Consultation
-                    </a>
-                    <a href="#services" class="rounded-lg border-2 border-slate-200 px-8 py-4 text-base font-bold">
-                        View Services
-                    </a>
-                </div>
-            </div>
-            <div class="relative h-[500px] overflow-hidden rounded-2xl bg-slate-200 fade-in-up stagger-2">
-                <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent-teal/10"></div>
-                <img alt="Modern high-rise office buildings in Dubai skyline"
-                    class="h-full w-full object-cover mix-blend-overlay opacity-80"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWsKvAX-o5CQBGazmX2Axo6990tpxI5Cl2gNPJHfULH994ol-UAoXbZ69BElKO9c3PrqX6GXzPiyQYKWzoo07sIuoRuCU71zxnJ6er4n7Vd7Xs23lTj_d2oXpEaBrBZTFn5R2ya5nx-wEF-VhR35DzzXeyttA6EuLbn-QfDJ6E069RFaJZrLJ5Tb2Xa8cX7eLdBQ0cZQyCg7hO7_4DYtu4CbrU6Uw646OCfB8Mam5RP0uHdK0o8hdSA52R1roVLwLuP9E9SgtnT_E" />
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== CORPORATE TAX NOTICE ========== -->
-    <section class="px-6 py-12 fade-in-up" id="tax">
-        <div class="mx-auto max-w-7xl">
-            <div class="relative overflow-hidden rounded-2xl border-2 border-accent-gold bg-white p-8 md:p-12">
-                <div class="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-accent-gold/10 blur-3xl"></div>
-                <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-                    <div class="flex-1 space-y-4 text-center md:text-left">
-                        <h3 class="text-2xl font-black text-accent-gold md:text-3xl">9% Corporate Tax Implementation
-                        </h3>
-                        <p class="text-lg text-slate-600">The UAE has introduced a 9% Corporate Tax on business profits
-                            above AED 375,000. Is your business prepared for the transition?</p>
-                    </div>
-                    <div class="flex flex-col items-center gap-4 min-w-[200px]">
-                        <span class="text-5xl font-black text-primary">9%</span>
-                        <span class="text-xs font-bold uppercase tracking-widest">Effective 2023/24</span>
-                        <a href="contact.html"
-                            class="w-full rounded-lg bg-accent-gold px-6 py-3 text-sm font-bold text-white text-center btn-lift">Get
-                            Compliance Ready</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== BOOKKEEPING SERVICE ========== -->
-    <section class="px-6 py-24" id="services">
-        <div class="mx-auto max-w-7xl flex flex-col md:flex-row items-center gap-16">
-            <div class="flex-1 space-y-6 fade-in-up">
-                <div class="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-                    <span class="material-symbols-outlined text-4xl">receipt_long</span>
-                </div>
-                <h2 class="text-4xl font-black tracking-tight">Professional Bookkeeping</h2>
-                <p class="text-lg text-slate-600">Maintain a crystal-clear financial health record with our
-                    precision-driven bookkeeping services. We handle the numbers so you can focus on the vision.</p>
-                <ul class="grid grid-cols-1 gap-4 pt-4 sm:grid-cols-2">
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-accent-teal font-bold">check_circle</span>
-                        <span class="text-sm font-semibold">Bank Reconciliation</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-accent-teal font-bold">check_circle</span>
-                        <span class="text-sm font-semibold">General Ledger</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-accent-teal font-bold">check_circle</span>
-                        <span class="text-sm font-semibold">Accounts Payable</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-accent-teal font-bold">check_circle</span>
-                        <span class="text-sm font-semibold">IFRS Compliance</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex-1 fade-in-up stagger-2">
-                <div class="aspect-square w-full rounded-3xl bg-slate-100 p-8 overflow-hidden relative group">
-                    <img alt="Modern workspace with laptop and financial documents"
-                        class="h-full w-full object-cover rounded-xl transition-transform duration-700 group-hover:scale-105"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyz1skA7Zdsca0iWN2d6DHJBtz5vD1gtIg4WuLXdB4-W1t7ErnThNFAkgAePHe7A7PkbjAHPKiBnqcW6EDK-IpGY0bs0HD0pp_nh2PhTxvtXGbRUXQWly8J8W77BBdOKhJyELJ5dYyNM7Rv9iD7cuXUOIT_MFDa136fIaMtAWJBzIdrsrwRW7r8dTStFEbL4vUGEwuGgTAMEL-l-7K_G2JACAOEgg0evW2XNdIotgl_NFRoXJc0fX16XfiJGCxHayNcusX1w2Bz14" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== VAT COMPLIANCE ========== -->
-    <section class="px-6 py-24 bg-white" id="vat">
-        <div class="mx-auto max-w-7xl flex flex-col md:flex-row-reverse items-center gap-16">
-            <div class="flex-1 space-y-6 fade-in-up">
-                <div
-                    class="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-accent-teal/10 text-accent-teal">
-                    <span class="material-symbols-outlined text-4xl">percent</span>
-                </div>
-                <h2 class="text-4xl font-black tracking-tight">VAT Compliance & Filing</h2>
-                <p class="text-lg text-slate-600">Navigate the FTA regulations with confidence. Our specialized tax
-                    consultants manage the complexities of VAT returns and audits.</p>
-                <ul class="grid grid-cols-1 gap-4 pt-4 sm:grid-cols-2">
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-accent-teal font-bold">check_circle</span>
-                        <span class="text-sm font-semibold">VAT Registration</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-accent-teal font-bold">check_circle</span>
-                        <span class="text-sm font-semibold">Quarterly Filing</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-accent-teal font-bold">check_circle</span>
-                        <span class="text-sm font-semibold">FTA Audit Prep</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-accent-teal font-bold">check_circle</span>
-                        <span class="text-sm font-semibold">VAT De-registration</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex-1 fade-in-up stagger-2">
-                <div class="aspect-square w-full rounded-3xl bg-slate-100 p-8 overflow-hidden relative group">
-                    <img alt="Accountant using calculator and organized tax files"
-                        class="h-full w-full object-cover rounded-xl transition-transform duration-700 group-hover:scale-105"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCspOmvaLwZkcZ0njIZaJ6NhKrI4RJwR2iEgaYHfx2thkJBAvZDG8Ki-nCLum6E5weFNvlT8t3-Ro8zybeXxRhDue9fvxNpLOylb34nelAyzf0tBYg2Og8P_iWzWetlNoH3TqXgLwyozCoB0_RAgbGIiiBqdpDVIHpOtpLsNSPgujrt2tPca_TUxRrDln5S5wgXdzWlEcO-WYFcswAXNmms4Xa1996FLDYSjZh2f98xbY5YdiiVXh007qWcPIBtFY_ON-zEXAfYNjE" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== ADDITIONAL SERVICES ========== -->
-    <section class="px-6 py-24">
-        <div class="mx-auto max-w-7xl">
-            <div class="mb-16 text-center space-y-4 fade-in-up">
-                <h2 class="text-3xl md:text-5xl font-black">Comprehensive Solutions</h2>
-                <p class="mx-auto max-w-2xl text-slate-600">Beyond standard accounting, we offer specialized consulting
-                    to optimize your business operations in the Gulf.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div
-                    class="group rounded-2xl border border-slate-200 bg-white p-8 transition-all hover:border-primary hover:shadow-xl fade-in-up stagger-1">
-                    <span class="material-symbols-outlined mb-6 block text-4xl text-primary">analytics</span>
-                    <h4 class="mb-3 text-xl font-bold">Internal Audit</h4>
-                    <p class="text-sm leading-relaxed text-slate-600">Independent assessment of your risk management,
-                        control, and governance processes.</p>
-                </div>
-                <div
-                    class="group rounded-2xl border border-slate-200 bg-white p-8 transition-all hover:border-primary hover:shadow-xl fade-in-up stagger-2">
-                    <span class="material-symbols-outlined mb-6 block text-4xl text-primary">groups</span>
-                    <h4 class="mb-3 text-xl font-bold">Payroll Management</h4>
-                    <p class="text-sm leading-relaxed text-slate-600">Streamlined WPS-compliant payroll processing and
-                        employee benefit management.</p>
-                </div>
-                <div
-                    class="group rounded-2xl border border-slate-200 bg-white p-8 transition-all hover:border-primary hover:shadow-xl fade-in-up stagger-3">
-                    <span class="material-symbols-outlined mb-6 block text-4xl text-primary">business_center</span>
-                    <h4 class="mb-3 text-xl font-bold">Company Formation</h4>
-                    <p class="text-sm leading-relaxed text-slate-600">Expert guidance on mainland, free zone, and
-                        offshore business setup in UAE.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== CTA BANNER ========== -->
-    <section class="px-6 pb-24">
-        <div
-            class="mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-primary px-8 py-20 text-center text-white relative">
-            <div class="absolute inset-0 opacity-10"
-                style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 20px 20px;"></div>
-            <div class="relative z-10 space-y-8 fade-in-up">
-                <h2 class="mx-auto max-w-3xl text-4xl font-black md:text-6xl leading-tight">
-                    Secure your business's financial future today.
-                </h2>
-                <p class="mx-auto max-w-xl text-lg text-white/80">
-                    Join 200+ businesses across the UAE that trust Indo Gulf Audit for compliance and strategic growth.
-                </p>
-                <div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
-                    <a href="contact.html"
-                        class="w-full sm:w-auto rounded-lg bg-white px-10 py-5 text-lg font-black text-primary transition-colors hover:bg-slate-100">
-                        Get a Free Quote
-                    </a>
-                    <a href="contact.html"
-                        class="w-full sm:w-auto rounded-lg border-2 border-white/30 px-10 py-5 text-lg font-black transition-colors hover:bg-white/10">
-                        Contact Us
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== UNIFIED FOOTER ========== -->
-    <footer class="bg-slate-900 pt-20 pb-10 border-t border-white/5">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-4 gap-12 mb-16">
-                <div class="space-y-6">
-                    <a href="index.html" class="flex items-center gap-3">
-                        <div class="w-8 h-8 bg-primary flex items-center justify-center rounded">
-                            <span class="material-symbols-outlined text-white text-xl">account_balance</span>
+        </section>
+        <!-- 2. Corporate Tax Notice -->
+        <section class="max-w-max_width mx-auto px-gutter md:px-xl py-xl md:py-jumbo">
+            <div
+                class="bg-surface-modal rounded-xl border border-warning/30 p-xl md:p-jumbo relative overflow-hidden shadow-[0px_4px_8px_0px_rgba(0,0,0,0.05)]">
+                <div class="absolute top-0 left-0 w-2 h-full bg-warning"></div>
+                <div class="flex flex-col md:flex-row items-center gap-xl justify-between">
+                    <div class="flex-1 space-y-sm">
+                        <div class="flex items-center gap-2 text-warning mb-2">
+                            <span class="material-symbols-outlined" data-icon="campaign" data-weight="fill"
+                                style="font-variation-settings: 'FILL' 1;">campaign</span>
+                            <span class="font-ui-label text-ui-label font-bold uppercase tracking-wider">Mandatory
+                                Update</span>
                         </div>
-                        <span class="text-white font-black text-lg tracking-tight">INDO GULF</span>
-                    </a>
-                    <p class="text-slate-400 text-sm leading-relaxed">A global leader in audit, tax, and advisory
-                        services. Powered by technology, driven by trust.</p>
-                    <p class="text-slate-500 text-xs italic">Cross-border support team with offices in UAE & India</p>
-                </div>
-                <div>
-                    <h5 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Quick Links</h5>
-                    <ul class="space-y-4 text-slate-400 text-sm">
-                        <li><a class="hover:text-accent-gold transition-colors" href="index.html">Home</a></li>
-                        <li><a class="hover:text-accent-gold transition-colors" href="about.html">About Us</a></li>
-                        <li><a class="hover:text-accent-gold transition-colors" href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h5 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Services</h5>
-                    <ul class="space-y-4 text-slate-400 text-sm">
-                        <li><a class="hover:text-accent-gold transition-colors" href="uae-services.html">UAE
-                                Services</a></li>
-                        <li><a class="hover:text-accent-gold transition-colors" href="audit-outsourcing.html">Audit
-                                Outsourcing</a></li>
-                        <li><a class="hover:text-accent-gold transition-colors" href="company-formation.html">Company
-                                Formation</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h5 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Contact</h5>
-                    <ul class="space-y-4 text-slate-400 text-sm">
-                        <li class="flex items-center gap-3"><span
-                                class="material-symbols-outlined text-accent-gold text-sm">mail</span><a
-                                href="mailto:khalid@indogulfaudit.com"
-                                class="hover:text-white transition-colors">khalid@indogulfaudit.com</a></li>
-                        <li class="flex items-center gap-3"><span
-                                class="material-symbols-outlined text-accent-gold text-sm">mail</span><a
-                                href="mailto:sales@indogulfaudit.com"
-                                class="hover:text-white transition-colors">sales@indogulfaudit.com</a></li>
-                        <li class="flex items-center gap-3"><span
-                                class="material-symbols-outlined text-accent-gold text-sm">location_on</span><span>Dubai,
-                                United Arab Emirates</span></li>
-                    </ul>
+                        <h2 class="font-h2-heading text-h2-heading text-on-surface">9% Corporate Tax Implementation</h2>
+                        <p class="font-body-regular text-body-regular text-on-surface-variant">
+                            Applicable on taxable profits exceeding AED 375,000. Ensure your accounting systems are
+                            ready for FTA compliance.
+                        </p>
+                        <div
+                            class="inline-block bg-warning/10 text-warning px-sm py-xs rounded-sm font-ui-label text-ui-label mt-2">
+                            Effective 2023/24
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center p-xl bg-surface-container-low rounded-lg min-w-[200px]">
+                        <span class="text-[64px] font-black text-warning leading-none">9%</span>
+                        <span class="font-ui-label text-ui-label text-on-surface-variant mt-2">Standard Rate</span>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <button
+                            class="bg-warning text-on-surface px-[40px] h-[58px] rounded-[5px] font-button-text text-button-text hover:bg-opacity-90 transition-all w-full md:w-auto">
+                            Get Compliance Ready
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
-                <p class="text-slate-500 text-xs">© 2024 Indo Gulf Audit. All rights reserved.</p>
-                <div class="flex gap-6">
-                    <a class="text-slate-500 hover:text-white transition-colors text-xs" href="#">Privacy Policy</a>
-                    <a class="text-slate-500 hover:text-white transition-colors text-xs" href="#">Terms of Service</a>
+        </section>
+        <!-- 3. Bookkeeping Service -->
+        <section
+            class="max-w-max_width mx-auto px-gutter md:px-xl py-jumbo md:py-massive border-t border-border-light/50">
+            <div class="grid md:grid-cols-2 gap-jumbo items-center">
+                <div class="space-y-xl">
+                    <div class="w-16 h-16 bg-primary-container/10 rounded-full flex items-center justify-center">
+                        <span class="material-symbols-outlined text-[32px] text-primary-teal"
+                            data-icon="account_balance">account_balance</span>
+                    </div>
+                    <div class="space-y-sm">
+                        <h2 class="font-h2-heading text-h2-heading text-on-surface">Professional Bookkeeping</h2>
+                        <p class="font-body-large text-body-large text-on-surface-variant">
+                            Accurate financial records are the foundation of business success in the UAE. Our meticulous
+                            bookkeeping ensures you are always audit-ready and compliant with local regulations.
+                        </p>
+                    </div>
+                    <ul class="space-y-sm">
+                        <li class="flex items-start gap-md">
+                            <span class="material-symbols-outlined text-success mt-1" data-icon="check_circle"
+                                data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span class="font-list-item text-list-item text-on-surface">Bank Reconciliation</span>
+                        </li>
+                        <li class="flex items-start gap-md">
+                            <span class="material-symbols-outlined text-success mt-1" data-icon="check_circle"
+                                data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span class="font-list-item text-list-item text-on-surface">General Ledger
+                                Maintenance</span>
+                        </li>
+                        <li class="flex items-start gap-md">
+                            <span class="material-symbols-outlined text-success mt-1" data-icon="check_circle"
+                                data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span class="font-list-item text-list-item text-on-surface">Accounts Payable &amp;
+                                Receivable</span>
+                        </li>
+                        <li class="flex items-start gap-md">
+                            <span class="material-symbols-outlined text-success mt-1" data-icon="check_circle"
+                                data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span class="font-list-item text-list-item text-on-surface">IFRS Compliance</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative h-[500px] rounded-xl overflow-hidden group">
+                    <img alt="Bookkeeping Services"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Professional accountant analyzing financial charts on a modern tablet device in a bright office"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIZYbtEDEso39eAj9lE7Da-1PtA1nqjdSgelA7fDpY5pWNPD5wkbUCQadnIxhX59_305qy_DKOAryfg_EHmzgOUyvLxIe5rJcvDGfg-3N_5EyRXU3c-ti3cxuBsoYjvbzu0QXK9ELgqqSI-AUwtuf33NIZEX56bcDmZLr4uLPvL3CX5VAse7EBedhrb-LPXhp-y525wNdTpBUIokVdrhOeNtCKmQQodi8klR891Vsakj15mSf0BSUd4gXfg1G2PB9GstKmJ-ZprCk" />
+                    <div
+                        class="absolute inset-0 bg-primary-navy/10 group-hover:bg-transparent transition-colors duration-500">
+                    </div>
                 </div>
             </div>
+        </section>
+        <!-- 4. VAT Compliance -->
+        <section class="bg-surface-container-low">
+            <div class="max-w-max_width mx-auto px-gutter md:px-xl py-jumbo md:py-massive">
+                <div class="grid md:grid-cols-2 gap-jumbo items-center">
+                    <div class="relative h-[500px] rounded-xl overflow-hidden group order-2 md:order-1">
+                        <img alt="VAT Compliance"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            data-alt="Close up of a calculator, financial documents, and a pen on a corporate desk with soft natural lighting"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBca37N2tMiTDOkmTDOHydZ__2W5N1-1jgCaSzCkNRlUWfImkPSrKh-EyuHv6luuLLMHSA9p_FwjUxpArLnT331zizf1MTKb-y14IxN_8-4jwuzbNbmH0GjI4t2APkTSU7iY-x7NYrD_G__0fTd6hG9mymtM30BsMzaH3rAPcgWmk1ybpt8L8sXavCF1aTQynjJecPeEhoBThPAgu5PktcB_zSZCswzYnk1UmZDAZN5awGC5YBNjFWejo3OywAhhZz38IjArVzLvs" />
+                        <div
+                            class="absolute inset-0 bg-primary-teal/10 group-hover:bg-transparent transition-colors duration-500">
+                        </div>
+                    </div>
+                    <div class="space-y-xl order-1 md:order-2">
+                        <div class="w-16 h-16 bg-primary-container/10 rounded-full flex items-center justify-center">
+                            <span class="material-symbols-outlined text-[32px] text-primary-teal"
+                                data-icon="receipt_long">receipt_long</span>
+                        </div>
+                        <div class="space-y-sm">
+                            <h2 class="font-h2-heading text-h2-heading text-on-surface">VAT Compliance &amp; Filing</h2>
+                            <p class="font-body-large text-body-large text-on-surface-variant">
+                                Ensure seamless adherence to FTA guidelines. We manage the complexities of Value Added
+                                Tax so you can focus on core business operations.
+                            </p>
+                        </div>
+                        <ul class="space-y-sm">
+                            <li class="flex items-start gap-md">
+                                <span class="material-symbols-outlined text-success mt-1" data-icon="check_circle"
+                                    data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                <span class="font-list-item text-list-item text-on-surface">VAT Registration</span>
+                            </li>
+                            <li class="flex items-start gap-md">
+                                <span class="material-symbols-outlined text-success mt-1" data-icon="check_circle"
+                                    data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                <span class="font-list-item text-list-item text-on-surface">Quarterly Filing</span>
+                            </li>
+                            <li class="flex items-start gap-md">
+                                <span class="material-symbols-outlined text-success mt-1" data-icon="check_circle"
+                                    data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                <span class="font-list-item text-list-item text-on-surface">FTA Audit Prep</span>
+                            </li>
+                            <li class="flex items-start gap-md">
+                                <span class="material-symbols-outlined text-success mt-1" data-icon="check_circle"
+                                    data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                <span class="font-list-item text-list-item text-on-surface">VAT De-registration</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 5. Additional Services (Bento/Cards) -->
+        <section class="max-w-max_width mx-auto px-gutter md:px-xl py-jumbo md:py-massive">
+            <div class="text-center max-w-3xl mx-auto mb-jumbo">
+                <h2 class="font-h2-heading text-h2-heading text-on-surface mb-sm">Comprehensive Solutions</h2>
+                <p class="font-body-large text-body-large text-on-surface-variant">Beyond standard compliance, we offer
+                    strategic financial services to support your business lifecycle.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-lg">
+                <!-- Card 1 -->
+                <div
+                    class="bg-surface-modal p-xl rounded-xl border border-border-light hover:border-primary-teal transition-colors duration-300 group">
+                    <div
+                        class="w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center mb-md group-hover:bg-primary-teal/10 transition-colors">
+                        <span
+                            class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-teal transition-colors"
+                            data-icon="fact_check">fact_check</span>
+                    </div>
+                    <h3 class="font-h5-subheading text-h5-subheading text-on-surface mb-sm">Internal Audit</h3>
+                    <p class="font-body-regular text-body-regular text-on-surface-variant">Rigorous evaluation of
+                        internal controls, risk management, and governance processes to safeguard your assets.</p>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="bg-surface-modal p-xl rounded-xl border border-border-light hover:border-primary-teal transition-colors duration-300 group">
+                    <div
+                        class="w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center mb-md group-hover:bg-primary-teal/10 transition-colors">
+                        <span
+                            class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-teal transition-colors"
+                            data-icon="payments">payments</span>
+                    </div>
+                    <h3 class="font-h5-subheading text-h5-subheading text-on-surface mb-sm">Payroll Management</h3>
+                    <p class="font-body-regular text-body-regular text-on-surface-variant">WPS compliant payroll
+                        processing, ensuring timely salary disbursal and accurate employee record maintenance.</p>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="bg-surface-modal p-xl rounded-xl border border-border-light hover:border-primary-teal transition-colors duration-300 group">
+                    <div
+                        class="w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center mb-md group-hover:bg-primary-teal/10 transition-colors">
+                        <span
+                            class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-teal transition-colors"
+                            data-icon="domain">domain</span>
+                    </div>
+                    <h3 class="font-h5-subheading text-h5-subheading text-on-surface mb-sm">Company Formation</h3>
+                    <p class="font-body-regular text-body-regular text-on-surface-variant">Expert guidance on mainland
+                        and free zone setup, licensing, and structural planning for new ventures.</p>
+                </div>
+            </div>
+        </section>
+        <!-- 6. CTA Banner -->
+        <section class="px-gutter md:px-xl pb-jumbo md:pb-massive">
+            <div
+                class="max-w-max_width mx-auto bg-cta-blue rounded-xl overflow-hidden relative p-xl md:p-jumbo text-center md:text-left shadow-[0px_4px_8px_0px_rgba(0,0,0,0.2)]">
+                <!-- Dot Pattern Background Overlay -->
+                <div class="absolute inset-0 opacity-10"
+                    style="background-image: radial-gradient(circle, #ffffff 2px, transparent 2px); background-size: 24px 24px;">
+                </div>
+                <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-xl">
+                    <div class="max-w-2xl space-y-sm">
+                        <h2 class="font-h2-heading text-h2-heading text-white">Secure your business's financial future
+                            today.</h2>
+                        <p class="font-body-large text-body-large text-white/80">
+                            Join 200+ businesses across the UAE who trust Indo Gulf Audit for impeccable financial
+                            clarity.
+                        </p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-sm w-full md:w-auto shrink-0">
+                        <button
+                            class="bg-white text-cta-blue px-[40px] h-[58px] rounded-[5px] font-button-text text-button-text hover:bg-gray-100 transition-all w-full sm:w-auto shadow-[0px_4px_8px_0px_rgba(0,0,0,0.2)]">
+                            Get a Free Quote
+                        </button>
+                        <button
+                            class="bg-transparent border border-white text-white px-[40px] h-[58px] rounded-[5px] font-button-text text-button-text hover:bg-white/10 transition-all w-full sm:w-auto">
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-white dark:bg-slate-950 font-['Work_Sans'] text-sm text-gray-500 border-t border-gray-200 dark:border-gray-800 w-full bottom-0">
+        <div class="py-[72px] px-8 max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
+            <div class="space-y-4 max-w-sm">
+                <div class="text-lg font-black tracking-widest uppercase text-[#4054B2]">Indo Gulf Audit</div>
+                <p>© 2024 Indo Gulf Audit &amp; Assurance. Global Financial Excellence.</p>
+            </div>
+            <nav class="flex flex-col md:flex-row gap-8">
+                <a class="text-gray-500 hover:text-[#1985A2] hover:underline underline-offset-4 transition-all duration-300"
+                    href="#">Privacy Policy</a>
+                <a class="text-gray-500 hover:text-[#1985A2] hover:underline underline-offset-4 transition-all duration-300"
+                    href="#">Terms of Service</a>
+                <a class="text-gray-500 hover:text-[#1985A2] hover:underline underline-offset-4 transition-all duration-300"
+                    href="#">Tax Residency</a>
+                <a class="text-gray-500 hover:text-[#1985A2] hover:underline underline-offset-4 transition-all duration-300"
+                    href="#">Sitemap</a>
+            </nav>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 
 </html>

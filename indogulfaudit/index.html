@@ -231,6 +231,10 @@
         }
 
         .animate-fade-in-up {
+            opacity: 0;
+        }
+
+        .animate-fade-in-up.is-visible {
             animation: fadeInUp 0.6s ease-out forwards;
         }
     </style>
@@ -242,7 +246,7 @@
         class="fixed top-0 w-full z-50 h-[80px] bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800">
         <div class="flex justify-between items-center max-w-[1440px] mx-auto px-8 h-full">
             <div class="text-lg font-black tracking-tighter text-slate-900 dark:text-white">
-                INDO GULF Audit &amp; Advisory
+                Indo Gulf Audit
             </div>
             <div class="hidden md:flex items-center space-x-6">
                 <a class="font-['Work_Sans'] text-sm font-medium tracking-wide text-cyan-700 dark:text-cyan-500 border-b-2 border-cyan-700 pb-1 active:scale-95 transition-transform"
@@ -430,10 +434,9 @@
     </section>
     <!-- Footer -->
     <footer class="w-full py-24 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
-        <div class="max-w-[1440px] mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-x-18 gap-y-12">
+        <div class="max-w-[1440px] mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-x-18 gap-y-12">
             <div class="col-span-1 md:col-span-1">
-                <span class="text-xl font-bold text-slate-900 dark:text-white mb-6 block">INDO GULF Audit &amp;
-                    Advisory</span>
+                <span class="text-xl font-bold text-slate-900 dark:text-white mb-6 block">Indo Gulf Audit</span>
                 <p class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400">
                     Simplifying Accounting, Tax, Payroll &amp; Financial Operations for Global Businesses.
                 </p>
@@ -460,23 +463,30 @@
                             href="company-formation.html">Company Formation</a></li>
                 </ul>
             </div>
-            <div class="col-span-1">
-                <h4 class="font-list-item text-list-item text-near-black mb-md dark:text-white">Legal</h4>
-                <ul class="space-y-sm">
-                    <li><a class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-cyan-700 transition-all duration-200 hover:translate-x-1 cursor-pointer"
-                            href="#">Privacy Policy</a></li>
-                    <li><a class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-cyan-700 transition-all duration-200 hover:translate-x-1 cursor-pointer"
-                            href="#">Terms of Service</a></li>
-                </ul>
-            </div>
             <div
-                class="col-span-1 md:col-span-4 mt-xl pt-xl border-t border-slate-200 dark:border-slate-800 text-center">
+                class="col-span-1 md:col-span-3 mt-xl pt-xl border-t border-slate-200 dark:border-slate-800 text-center">
                 <p class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400">
-                    © 2024 Indo Gulf Audit &amp; Advisory. All Rights Reserved.
+                    © 2026 Indo Gulf Audit. All Rights Reserved.
                 </p>
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.animate-fade-in-up, .fade-in-up').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
 </body>
 
 </html>

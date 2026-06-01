@@ -2,6 +2,9 @@
    Indo Gulf Audit — Global Stylesheet
    ============================================ */
 
+/* --- Google Font Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
 /* --- CSS Custom Properties (Design Tokens) --- */
 :root {
   --primary: #1a3a6b;
@@ -13,6 +16,7 @@
   --bg-light: #f6f7f8;
   --bg-dark: #13181f;
   --transition-base: 0.3s ease;
+  --font-primary: 'Inter', 'Work Sans', system-ui, -apple-system, sans-serif;
 }
 
 /* --- Global Reset & Base --- */
@@ -27,7 +31,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: var(--font-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -252,4 +256,429 @@ header nav a.active::after {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(var(--primary-rgb), 0.5);
+}
+
+/* ============================================
+   Team Members Section
+   ============================================ */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.team-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #1985A2, #4054B2);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.team-card:hover::before {
+  transform: scaleX(1);
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: #1985A2;
+}
+
+.team-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #1985A2, #4054B2);
+  box-shadow: 0 4px 12px rgba(25, 133, 162, 0.3);
+}
+
+.team-card h3 {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.team-card .team-role {
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-weight: 600;
+  color: #1985A2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.team-card p {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1.7;
+  color: #64748b;
+}
+
+/* ============================================
+   Accounting Software Strip
+   ============================================ */
+.software-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.software-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: 600;
+  color: #334155;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.software-badge:hover {
+  border-color: #1985A2;
+  box-shadow: 0 4px 12px rgba(25, 133, 162, 0.15);
+  transform: translateY(-2px);
+}
+
+.software-badge .sw-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.sw-tally { background: linear-gradient(135deg, #e63946, #c1121f); }
+.sw-busy { background: linear-gradient(135deg, #2196F3, #1565C0); }
+.sw-quickbooks { background: linear-gradient(135deg, #2CA01C, #1a7a10); }
+.sw-zoho { background: linear-gradient(135deg, #D32F2F, #B71C1C); }
+.sw-xero { background: linear-gradient(135deg, #13B5EA, #0a8bbf); }
+
+/* ============================================
+   Social Media Icons in Footer
+   ============================================ */
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.social-link {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f9;
+  color: #64748b;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background: #1985A2;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(25, 133, 162, 0.3);
+}
+
+.social-link svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* ============================================
+   Hamburger Menu Button
+   ============================================ */
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  gap: 5px;
+  padding: 8px;
+  transition: all 0.2s ease;
+}
+
+.hamburger-btn:hover {
+  background: #f1f5f9;
+}
+
+.hamburger-btn span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #334155;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* ============================================
+   Nav Logo
+   ============================================ */
+.nav-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #d4a843;
+  flex-shrink: 0;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+/* ============================================
+   Enhanced Animations
+   ============================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+}
+
+.animate-fade-in-up.is-visible {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(25, 133, 162, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(25, 133, 162, 0); }
+}
+
+/* ============================================
+   Mobile Responsive Overrides
+   ============================================ */
+@media (max-width: 768px) {
+  /* Show hamburger */
+  .hamburger-btn {
+    display: flex;
+  }
+
+  /* Hide desktop nav and CTA */
+  .desktop-nav,
+  .desktop-cta {
+    display: none !important;
+  }
+
+  /* Nav logo smaller on mobile */
+  .nav-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* General padding reduction */
+  .px-8 {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Reduce massive padding on mobile */
+  .py-massive {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+
+  .py-jumbo {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .pt-massive {
+    padding-top: 48px !important;
+  }
+
+  .pb-massive {
+    padding-bottom: 48px !important;
+  }
+
+  /* Gap reductions */
+  .gap-jumbo {
+    gap: 32px !important;
+  }
+
+  /* Typography scale-down */
+  .md\:text-\[56px\] {
+    font-size: 28px !important;
+    line-height: 34px !important;
+  }
+
+  /* Team grid single column on small */
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Software strip scrollable */
+  .software-strip {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .software-strip::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  /* Footer grid single column */
+  footer .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Hero images hidden on very small */
+  .hero-img-mobile-hide {
+    display: none;
+  }
+
+  /* Reduce button sizes */
+  .h-\[58px\] {
+    height: 48px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    font-size: 15px !important;
+  }
+
+  /* Nav height */
+  nav.fixed {
+    height: 64px !important;
+  }
+
+  .pt-\[80px\] {
+    padding-top: 64px !important;
+  }
+
+  /* Make stat cards 2-column on mobile */
+  .grid-cols-2.md\:grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* CTA sections */
+  .p-jumbo {
+    padding: 32px !important;
+  }
+
+  /* Service cards */
+  .md\:col-span-2 {
+    grid-column: span 1 !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .desktop-nav {
+    display: none !important;
+  }
+
+  .desktop-cta {
+    display: flex !important;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .team-card {
+    padding: 24px 16px;
+  }
+
+  .software-badge {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+
+  h2 {
+    font-size: 22px !important;
+    line-height: 28px !important;
+  }
 }

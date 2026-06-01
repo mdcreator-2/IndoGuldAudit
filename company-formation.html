@@ -1,554 +1,314 @@
 <!DOCTYPE html>
-
-<html class="scroll-smooth" lang="en">
+<html class="light" lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Company Formation - Indo Gulf Audit &amp; Advisory</title>
+    <title>Company Formation — Indo Gulf Audit | Dubai Mainland &amp; Free Zone Setup</title>
+    <meta name="description" content="Premium Dubai company formation services. Mainland and Free Zone business setup, trade licensing, PRO & visa services, and banking assistance from Indo Gulf Audit." />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png" />
+    <link rel="apple-touch-icon" href="assets/favicon-192.png" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Verdana:wght@400;500;600;700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
-                    "colors": {
-                        "surface-container-highest": "#dfe3e5",
-                        "surface-container-high": "#e5e9eb",
-                        "on-tertiary-fixed-variant": "#6c3a00",
-                        "on-background": "#181c1e",
-                        "near-black": "#080808",
-                        "warning": "#FCB900",
-                        "surface-bright": "#f6fafc",
-                        "outline-variant": "#bec8cd",
-                        "surface-container-lowest": "#ffffff",
-                        "surface-modal": "#FFFFFF",
-                        "surface": "#f6fafc",
-                        "on-primary-fixed-variant": "#004e60",
-                        "on-error": "#ffffff",
-                        "secondary": "#4357b5",
+                    colors: {
+                        "cta-blue": "#4054B2", "primary-teal": "#1985A2", "primary-navy": "#1994C3",
+                        "near-black": "#080808", "surface": "#f6fafc", "surface-variant": "#dfe3e5",
+                        "surface-container": "#ebeef1", "surface-container-low": "#f1f4f6",
+                        "surface-container-high": "#e5e9eb", "surface-tint": "#00677f",
+                        "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-surface": "#181c1e",
+                        "on-surface-variant": "#3e484d", "on-background": "#181c1e",
+                        "secondary-gray": "#6C757D", "border-light": "#DDDDDD",
+                        "primary-fixed-dim": "#79d2f2", "primary-container": "#087f9c",
+                        "warning": "#FCB900", "success": "#61CE70", "background": "#f6fafc",
                         "dark-gray": "#1D1D1D",
-                        "accent-purple": "#7A00DF",
-                        "on-secondary-fixed": "#001258",
-                        "background": "#f6fafc",
-                        "on-primary-fixed": "#001f28",
-                        "primary-fixed": "#b7eaff",
-                        "on-tertiary-container": "#fffbff",
-                        "secondary-container": "#879afd",
-                        "on-error-container": "#93000a",
-                        "primary-container": "#087f9c",
-                        "accent-teal": "#079B95",
-                        "surface-container": "#ebeef1",
-                        "on-tertiary-fixed": "#2e1500",
-                        "inverse-surface": "#2d3133",
-                        "secondary-fixed-dim": "#b9c3ff",
-                        "surface-dim": "#d7dadd",
-                        "primary-navy": "#1994C3",
-                        "inverse-primary": "#79d2f2",
-                        "tertiary-container": "#a66524",
-                        "surface-container-low": "#f1f4f6",
-                        "tertiary": "#884d0a",
-                        "on-secondary-fixed-variant": "#283e9b",
-                        "cta-blue": "#4054B2",
-                        "surface-variant": "#dfe3e5",
-                        "tertiary-fixed-dim": "#ffb778",
-                        "surface-tint": "#00677f",
-                        "success": "#61CE70",
-                        "on-primary-container": "#fafdff",
-                        "inverse-on-surface": "#eef1f3",
-                        "secondary-gray": "#6C757D",
-                        "primary-teal": "#1985A2",
-                        "outline": "#6f797d",
-                        "on-secondary-container": "#142c8b",
-                        "on-primary": "#ffffff",
-                        "tertiary-fixed": "#ffdcc1",
-                        "accent-blue": "#007BFF",
-                        "error-container": "#ffdad6",
-                        "on-surface-variant": "#3e484d",
-                        "on-surface": "#181c1e",
-                        "on-secondary": "#ffffff",
-                        "secondary-fixed": "#dee1ff",
-                        "on-tertiary": "#ffffff",
-                        "error": "#CF2E2E",
-                        "border-light": "#DDDDDD",
-                        "primary": "#00647c",
-                        "primary-fixed-dim": "#79d2f2"
                     },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "spacing": {
-                        "md": "16px",
-                        "xs": "4px",
-                        "lg": "20px",
-                        "jumbo": "72px",
-                        "sm": "8px",
-                        "gutter": "16px",
-                        "sm-md": "12px",
-                        "base": "4px",
-                        "xl": "32px",
-                        "max_width": "1440px",
-                        "massive": "136px"
-                    },
-                    "fontFamily": {
-                        "h1-display": ["Verdana", "sans-serif"],
-                        "ui-label": ["Verdana", "sans-serif"],
-                        "caption": ["Verdana", "sans-serif"],
-                        "body-large": ["Verdana", "sans-serif"],
-                        "list-item": ["Verdana", "sans-serif"],
-                        "input-text": ["Verdana", "sans-serif"],
-                        "h5-subheading": ["Verdana", "sans-serif"],
-                        "h2-heading": ["Verdana", "sans-serif"],
-                        "body-regular": ["Verdana", "sans-serif"],
-                        "button-text": ["Verdana", "sans-serif"]
-                    },
-                    "fontSize": {
-                        "h1-display": ["30px", { "lineHeight": "36px", "letterSpacing": "0px", "fontWeight": "700" }],
-                        "ui-label": ["15px", { "lineHeight": "30px", "letterSpacing": "0px", "fontWeight": "501" }],
-                        "caption": ["24px", { "lineHeight": "26.4px", "letterSpacing": "0px", "fontWeight": "700" }],
-                        "body-large": ["20px", { "lineHeight": "40px", "letterSpacing": "0px", "fontWeight": "400" }],
-                        "list-item": ["18px", { "lineHeight": "36px", "letterSpacing": "0px", "fontWeight": "600" }],
-                        "input-text": ["15px", { "lineHeight": "17.25px", "letterSpacing": "0px", "fontWeight": "400" }],
-                        "h5-subheading": ["28px", { "lineHeight": "56px", "letterSpacing": "0px", "fontWeight": "700" }],
-                        "h2-heading": ["30px", { "lineHeight": "33px", "letterSpacing": "0px", "fontWeight": "700" }],
-                        "body-regular": ["18px", { "lineHeight": "36px", "letterSpacing": "0px", "fontWeight": "400" }],
-                        "button-text": ["18px", { "lineHeight": "36px", "letterSpacing": "0px", "fontWeight": "400" }]
-                    }
-                }
-            }
+                    spacing: { xs: "4px", sm: "8px", "sm-md": "12px", md: "16px", lg: "20px", xl: "32px", jumbo: "72px", massive: "136px", max_width: "1440px", gutter: "16px" },
+                    fontFamily: { sans: ["Inter", "Work Sans", "system-ui", "sans-serif"] },
+                    borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" }
+                },
+            },
         }
     </script>
-    <style>
-        .dot-pattern {
-            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-            background-size: 24px 24px;
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 0.8s ease-out forwards;
-            opacity: 0;
-            transform: translateY(20px);
-        }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
 </head>
 
-<body class="bg-background text-on-background font-body-regular antialiased">
-    <!-- TopAppBar -->
+<body class="bg-background text-on-background font-sans antialiased pt-[80px]">
     <!-- TopNavBar -->
-    <nav
-        class="fixed top-0 w-full z-50 h-[80px] bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800">
+    <nav class="fixed top-0 w-full z-50 h-[80px] bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
         <div class="flex justify-between items-center max-w-[1440px] mx-auto px-8 h-full">
-            <div class="text-lg font-black tracking-tighter text-slate-900 dark:text-white flex flex-col">
-                <span>Indo Gulf Audit</span>
-                <span class="text-[13px] font-semibold text-slate-500 tracking-normal mt-0.5">Accounting &amp; Taxation Trusted Partner</span>
+            <a href="index.html" class="nav-brand">
+                <img src="assets/logo.jpeg" alt="Indo Gulf Audit Logo" class="nav-logo" />
+                <div class="flex flex-col">
+                    <span class="text-lg font-extrabold tracking-tight text-slate-900">Indo Gulf Audit</span>
+                    <span class="text-[11px] font-semibold text-slate-500 tracking-normal">Accounting &amp; Taxation Trusted Partner</span>
+                </div>
+            </a>
+            <div class="hidden lg:flex items-center space-x-6 desktop-nav">
+                <a class="font-['Inter'] text-sm font-medium tracking-wide text-slate-600 hover:text-primary-teal transition-colors duration-300" href="index.html">Home</a>
+                <a class="font-['Inter'] text-sm font-medium tracking-wide text-slate-600 hover:text-primary-teal transition-colors duration-300" href="uae-services.html">India &amp; UAE Services</a>
+                <a class="font-['Inter'] text-sm font-medium tracking-wide text-slate-600 hover:text-primary-teal transition-colors duration-300" href="audit-outsourcing.html">Audit Firm Outsourcing</a>
+                <a class="font-['Inter'] text-sm font-semibold tracking-wide text-primary-teal border-b-2 border-primary-teal pb-1" href="company-formation.html">Company Formation</a>
+                <a class="font-['Inter'] text-sm font-medium tracking-wide text-slate-600 hover:text-primary-teal transition-colors duration-300" href="about.html">About Us</a>
+                <a class="font-['Inter'] text-sm font-medium tracking-wide text-slate-600 hover:text-primary-teal transition-colors duration-300" href="contact.html">Contact Us</a>
             </div>
-            <div class="hidden md:flex items-center space-x-6">
-                <a class="font-['Work_Sans'] text-sm font-medium tracking-wide text-slate-600 dark:text-slate-400 hover:text-cyan-700 transition-colors duration-300 active:scale-95 transition-transform"
-                    href="index.html">Home</a>
-                <a class="font-['Work_Sans'] text-sm font-medium tracking-wide text-slate-600 dark:text-slate-400 hover:text-cyan-700 transition-colors duration-300 active:scale-95 transition-transform"
-                    href="uae-services.html">UAE Services</a>
-                <a class="font-['Work_Sans'] text-sm font-medium tracking-wide text-slate-600 dark:text-slate-400 hover:text-cyan-700 transition-colors duration-300 active:scale-95 transition-transform"
-                    href="audit-outsourcing.html">Audit Firm Outsourcing</a>
-                <a class="font-['Work_Sans'] text-sm font-medium tracking-wide text-cyan-700 dark:text-cyan-500 border-b-2 border-cyan-700 pb-1 active:scale-95 transition-transform"
-                    href="company-formation.html">Company Formation</a>
-                <a class="font-['Work_Sans'] text-sm font-medium tracking-wide text-slate-600 dark:text-slate-400 hover:text-cyan-700 transition-colors duration-300 active:scale-95 transition-transform"
-                    href="about.html">About Us</a>
-                <a class="font-['Work_Sans'] text-sm font-medium tracking-wide text-slate-600 dark:text-slate-400 hover:text-cyan-700 transition-colors duration-300 active:scale-95 transition-transform"
-                    href="contact.html">Contact Us</a>
-            </div>
-            <a class="bg-cta-blue text-on-secondary px-[40px] py-[10px] rounded h-[58px] flex items-center justify-center font-button-text text-button-text font-bold active:scale-95 transition-transform"
-                href="contact.html">Book Free Consultation</a>
+            <a class="desktop-cta hidden lg:flex bg-cta-blue text-on-secondary px-8 py-2.5 rounded-lg h-[48px] items-center justify-center text-sm font-bold hover:bg-opacity-90 transition-all shadow-md" href="contact.html">Book Free Consultation</a>
+            <button class="hamburger-btn lg:hidden" id="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
         </div>
     </nav>
+    <div class="mobile-nav-overlay" id="mobile-overlay"></div>
+    <div class="mobile-nav-panel" id="mobile-panel">
+        <button class="close-btn" id="menu-close" aria-label="Close menu"><span class="material-symbols-outlined text-2xl">close</span></button>
+        <div class="flex items-center gap-3 mt-2"><img src="assets/logo.jpeg" alt="Logo" class="w-10 h-10 rounded-full border-2 border-amber-400 object-cover" /><div><div class="font-bold text-slate-900">Indo Gulf Audit</div><div class="text-xs text-slate-500">Accounting &amp; Taxation</div></div></div>
+        <nav>
+            <a href="index.html">Home</a><a href="uae-services.html">India &amp; UAE Services</a>
+            <a href="audit-outsourcing.html">Audit Firm Outsourcing</a>
+            <a href="company-formation.html" class="active">Company Formation</a>
+            <a href="about.html">About Us</a><a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="mobile-cta"><a class="block w-full bg-cta-blue text-white text-center py-3 rounded-lg font-semibold text-sm" href="contact.html">Book Free Consultation</a></div>
+    </div>
+
     <main>
         <!-- Hero Section -->
-        <section class="relative bg-primary text-on-primary py-massive overflow-hidden dot-pattern fade-in-up">
-            <div class="max-w-[1440px] mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-jumbo items-center">
-                <div>
-                    <span
-                        class="inline-block bg-surface-tint/20 text-primary-fixed border border-primary-fixed/30 px-md py-sm rounded bg-opacity-20 font-ui-label text-ui-label mb-lg backdrop-blur-sm">
+        <section class="relative bg-primary-teal text-white py-16 md:py-24 lg:py-32 overflow-hidden">
+            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;"></div>
+            <div class="max-w-[1440px] mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center relative z-10">
+                <div class="space-y-6 animate-fade-in-up">
+                    <span class="inline-flex items-center gap-2 bg-white/15 text-white px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm">
+                        <span class="material-symbols-outlined text-sm">workspace_premium</span>
                         Premium Advisory
                     </span>
-                    <h1 class="font-h1-display text-h1-display mb-lg text-white">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
                         Premium Dubai Company Formation
                     </h1>
-                    <p class="font-body-large text-body-large text-surface-container-high mb-xl">
-                        Strategic setup solutions across Mainland and Free Zone jurisdictions. Leverage our expertise
-                        for seamless market entry and compliance in the UAE.
+                    <p class="text-base md:text-lg text-primary-fixed-dim max-w-2xl leading-relaxed">
+                        Strategic setup solutions across Mainland and Free Zone jurisdictions. Leverage our expertise for seamless market entry and compliance in the UAE.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-md">
-                        <a class="bg-cta-blue text-white font-button-text text-button-text px-[40px] py-[20px] rounded-[5px] h-[58px] flex items-center justify-center hover:bg-secondary transition-colors duration-300 border border-transparent"
-                            href="contact.html">
+                    <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                        <a class="bg-cta-blue text-white px-8 h-[52px] rounded-lg text-sm font-bold hover:bg-opacity-90 transition-colors shadow-md flex items-center justify-center" href="contact.html">
                             Start Your Journey
                         </a>
-                        <a class="border border-white text-white font-button-text text-button-text px-[40px] py-[20px] rounded-none h-[58px] flex items-center justify-center hover:bg-white hover:text-primary transition-colors duration-300"
-                            href="#faq">
+                        <a class="border-2 border-white text-white px-8 h-[52px] rounded-lg text-sm font-bold hover:bg-white/10 transition-colors flex items-center justify-center" href="#faq">
                             Learn More
                         </a>
                     </div>
                 </div>
-                <div class="relative hidden md:block">
-                    <img alt="Dubai skyline at dusk with modern architecture and glowing lights reflecting on water"
-                        class="rounded-lg shadow-2xl object-cover w-full h-[500px]"
-                        data-alt="Dubai skyline at dusk with modern architecture and glowing lights reflecting on water"
+                <div class="relative hidden md:block animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <img alt="Dubai skyline at dusk" class="rounded-xl shadow-2xl object-cover w-full h-[420px]"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuC27tnQROVqPuSz6sAMVaKTWAewspEyCiDwZCRZfezx2dmylYU4PilIAyN2y9Q6DZhbACmIUcmMG0wU8kpjYnB3nu4EGA7J95VADq-Us31RYryGYvFCE-UADw_gMBVuw5YxsFEwZrnaXZAfk1BkgnHJ6VySjUC4DfeZI-Wwpqs0nLOf6602J03k6IS420AKu-t130C3ryUZinOaaAM8U1pBXAwMEG2LPr8RxweygvCzEgkeFOGEK7Iv0ZRVob_yVzc8gUU8hZj6sx8" />
-                    <div
-                        class="absolute -bottom-lg -left-lg bg-white p-lg rounded-lg shadow-[rgba(0,0,0,0.2)_0px_4px_8px_0px] flex items-center gap-md">
-                        <span class="material-symbols-outlined text-warning text-4xl"
-                            style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+                    <div class="absolute -bottom-4 -left-4 bg-white p-4 rounded-xl shadow-lg flex items-center gap-3">
+                        <span class="material-symbols-outlined text-warning text-3xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
                         <div>
-                            <p class="font-h2-heading text-h2-heading text-on-background">10+</p>
-                            <p class="font-ui-label text-ui-label text-secondary-gray">Years Excellence</p>
+                            <p class="text-2xl font-extrabold text-near-black">10+</p>
+                            <p class="text-xs font-semibold text-secondary-gray">Years Excellence</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Jurisdiction Cards -->
-        <section class="py-massive bg-surface-dim fade-in-up" style="animation-delay: 0.1s;">
-            <div class="max-w-[1440px] mx-auto px-8">
-                <h2 class="font-h2-heading text-h2-heading text-center mb-jumbo text-on-background">Strategic
-                    Jurisdictions</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+        <section class="py-16 md:py-24 bg-surface-container-low animate-fade-in-up">
+            <div class="max-w-[1440px] mx-auto px-4 md:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-near-black">Strategic Jurisdictions</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <!-- Mainland Card -->
-                    <div
-                        class="bg-surface-container-lowest p-xl border border-border-light hover:shadow-[rgba(0,0,0,0.2)_0px_4px_8px_0px] transition-shadow duration-300">
-                        <div class="flex items-center gap-md mb-lg">
-                            <div
-                                class="w-12 h-12 bg-primary-container/10 rounded-full flex items-center justify-center text-primary-teal">
-                                <span class="material-symbols-outlined"
-                                    style="font-variation-settings: 'FILL' 1;">domain</span>
+                    <div class="bg-white p-8 rounded-xl border border-border-light hover:shadow-lg hover:-translate-y-1 transition-all">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-12 h-12 bg-primary-teal/10 rounded-full flex items-center justify-center text-primary-teal">
+                                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">domain</span>
                             </div>
-                            <h3 class="font-h5-subheading text-h5-subheading text-on-background">Mainland Business Setup
-                            </h3>
+                            <h3 class="text-xl font-bold text-near-black">Mainland Business Setup</h3>
                         </div>
-                        <p class="font-body-regular text-body-regular text-secondary-gray mb-lg">
-                            Operate anywhere in the UAE and internationally. Ideal for businesses looking to trade
-                            directly with the local market and government entities.
+                        <p class="text-[15px] leading-7 text-secondary-gray mb-5">
+                            Operate anywhere in the UAE and internationally. Ideal for businesses looking to trade directly with the local market and government entities.
                         </p>
-                        <ul class="space-y-md mb-xl">
-                            <li class="flex items-start gap-sm">
-                                <span class="material-symbols-outlined text-success mt-1">check_circle</span>
-                                <span class="font-list-item text-list-item text-on-surface">No Geographical
-                                    Limits</span>
-                            </li>
-                            <li class="flex items-start gap-sm">
-                                <span class="material-symbols-outlined text-success mt-1">check_circle</span>
-                                <span class="font-list-item text-list-item text-on-surface">Direct Government
-                                    Tendering</span>
-                            </li>
-                            <li class="flex items-start gap-sm">
-                                <span class="material-symbols-outlined text-success mt-1">check_circle</span>
-                                <span class="font-list-item text-list-item text-on-surface">Multi-visa Facilities</span>
-                            </li>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-success text-lg">check_circle</span><span class="text-sm font-semibold text-on-surface">No Geographical Limits</span></li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-success text-lg">check_circle</span><span class="text-sm font-semibold text-on-surface">Direct Government Tendering</span></li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-success text-lg">check_circle</span><span class="text-sm font-semibold text-on-surface">Multi-visa Facilities</span></li>
                         </ul>
-                        <a class="inline-flex items-center gap-sm text-primary-teal font-button-text text-button-text hover:text-primary-navy transition-colors"
-                            href="contact.html">
+                        <a class="inline-flex items-center gap-1 text-primary-teal text-sm font-bold hover:text-primary-navy transition-colors" href="contact.html">
                             Explore Mainland <span class="material-symbols-outlined text-sm">arrow_forward</span>
                         </a>
                     </div>
                     <!-- Free Zone Card -->
-                    <div
-                        class="bg-surface-container-lowest p-xl border border-border-light hover:shadow-[rgba(0,0,0,0.2)_0px_4px_8px_0px] transition-shadow duration-300">
-                        <div class="flex items-center gap-md mb-lg">
-                            <div
-                                class="w-12 h-12 bg-primary-container/10 rounded-full flex items-center justify-center text-primary-teal">
-                                <span class="material-symbols-outlined"
-                                    style="font-variation-settings: 'FILL' 1;">public</span>
+                    <div class="bg-white p-8 rounded-xl border border-border-light hover:shadow-lg hover:-translate-y-1 transition-all">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-12 h-12 bg-primary-teal/10 rounded-full flex items-center justify-center text-primary-teal">
+                                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">public</span>
                             </div>
-                            <h3 class="font-h5-subheading text-h5-subheading text-on-background">Free Zone Excellence
-                            </h3>
+                            <h3 class="text-xl font-bold text-near-black">Free Zone Excellence</h3>
                         </div>
-                        <p class="font-body-regular text-body-regular text-secondary-gray mb-lg">
-                            Cost-effective setups with world-class infrastructure. Designed to boost international
-                            business with specialized economic zones.
+                        <p class="text-[15px] leading-7 text-secondary-gray mb-5">
+                            Cost-effective setups with world-class infrastructure. Designed to boost international business with specialized economic zones.
                         </p>
-                        <ul class="space-y-md mb-xl">
-                            <li class="flex items-start gap-sm">
-                                <span class="material-symbols-outlined text-success mt-1">check_circle</span>
-                                <span class="font-list-item text-list-item text-on-surface">100% Capital
-                                    Repatriation</span>
-                            </li>
-                            <li class="flex items-start gap-sm">
-                                <span class="material-symbols-outlined text-success mt-1">check_circle</span>
-                                <span class="font-list-item text-list-item text-on-surface">0% Corporate &amp; Income
-                                    Tax</span>
-                            </li>
-                            <li class="flex items-start gap-sm">
-                                <span class="material-symbols-outlined text-success mt-1">check_circle</span>
-                                <span class="font-list-item text-list-item text-on-surface">No Customs Duties</span>
-                            </li>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-success text-lg">check_circle</span><span class="text-sm font-semibold text-on-surface">100% Capital Repatriation</span></li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-success text-lg">check_circle</span><span class="text-sm font-semibold text-on-surface">0% Corporate &amp; Income Tax</span></li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-success text-lg">check_circle</span><span class="text-sm font-semibold text-on-surface">No Customs Duties</span></li>
                         </ul>
-                        <a class="inline-flex items-center gap-sm text-primary-teal font-button-text text-button-text hover:text-primary-navy transition-colors"
-                            href="contact.html">
+                        <a class="inline-flex items-center gap-1 text-primary-teal text-sm font-bold hover:text-primary-navy transition-colors" href="contact.html">
                             Explore Free Zones <span class="material-symbols-outlined text-sm">arrow_forward</span>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Formation Services -->
-        <section class="py-massive bg-surface-container-lowest fade-in-up" style="animation-delay: 0.2s;">
-            <div class="max-w-[1440px] mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-jumbo">
-                <div class="lg:col-span-5 flex flex-col justify-center">
-                    <h2 class="font-h2-heading text-h2-heading text-on-background mb-lg">Bespoke Formation Services</h2>
-                    <p class="font-body-regular text-body-regular text-secondary-gray mb-xl">
-                        A comprehensive suite of services ensuring compliance, operational readiness, and strategic
-                        advantage from day one.
+        <section class="py-16 md:py-24 bg-white animate-fade-in-up">
+            <div class="max-w-[1440px] mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+                <div class="lg:col-span-5 flex flex-col justify-center space-y-6">
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-near-black">Bespoke Formation Services</h2>
+                    <p class="text-[15px] leading-7 text-secondary-gray">
+                        A comprehensive suite of services ensuring compliance, operational readiness, and strategic advantage from day one.
                     </p>
-                    <div class="bg-dark-gray text-white p-xl rounded-lg border-l-4 border-cta-blue">
-                        <span class="material-symbols-outlined text-cta-blue text-4xl mb-md">format_quote</span>
-                        <p class="font-body-large text-body-large italic mb-md">
-                            "Their meticulous approach to legal structuring saved us months of bureaucratic delays. A
-                            true partner in regional expansion."
+                    <div class="bg-dark-gray text-white p-6 rounded-xl border-l-4 border-cta-blue">
+                        <span class="material-symbols-outlined text-cta-blue text-3xl mb-3 block">format_quote</span>
+                        <p class="text-base leading-7 italic mb-3">
+                            "Their meticulous approach to legal structuring saved us months of bureaucratic delays. A true partner in regional expansion."
                         </p>
-                        <p class="font-ui-label text-ui-label text-surface-container-high">- Global Tech Ventures</p>
+                        <p class="text-sm text-slate-400">— Global Tech Ventures</p>
                     </div>
                 </div>
-                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-lg">
-                    <!-- Service 1 -->
-                    <div
-                        class="p-lg border border-border-light flex flex-col gap-sm hover:border-primary-teal transition-colors duration-300">
-                        <span class="material-symbols-outlined text-primary-teal text-3xl">gavel</span>
-                        <h4 class="font-list-item text-list-item text-on-background">Legal Structuring</h4>
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="p-6 border border-border-light rounded-xl flex flex-col gap-3 hover:border-primary-teal transition-colors">
+                        <span class="material-symbols-outlined text-primary-teal text-2xl">gavel</span>
+                        <h4 class="text-base font-bold text-near-black">Legal Structuring</h4>
                     </div>
-                    <!-- Service 2 -->
-                    <div
-                        class="p-lg border border-border-light flex flex-col gap-sm hover:border-primary-teal transition-colors duration-300">
-                        <span class="material-symbols-outlined text-primary-teal text-3xl">account_balance</span>
-                        <h4 class="font-list-item text-list-item text-on-background">Banking Assistance</h4>
+                    <div class="p-6 border border-border-light rounded-xl flex flex-col gap-3 hover:border-primary-teal transition-colors">
+                        <span class="material-symbols-outlined text-primary-teal text-2xl">account_balance</span>
+                        <h4 class="text-base font-bold text-near-black">Banking Assistance</h4>
                     </div>
-                    <!-- Service 3 -->
-                    <div
-                        class="p-lg border border-border-light flex flex-col gap-sm hover:border-primary-teal transition-colors duration-300">
-                        <span class="material-symbols-outlined text-primary-teal text-3xl">badge</span>
-                        <h4 class="font-list-item text-list-item text-on-background">PRO &amp; Visa Services</h4>
+                    <div class="p-6 border border-border-light rounded-xl flex flex-col gap-3 hover:border-primary-teal transition-colors">
+                        <span class="material-symbols-outlined text-primary-teal text-2xl">badge</span>
+                        <h4 class="text-base font-bold text-near-black">PRO &amp; Visa Services</h4>
                     </div>
-                    <!-- Service 4 -->
-                    <div
-                        class="p-lg border border-border-light flex flex-col gap-sm hover:border-primary-teal transition-colors duration-300">
-                        <span class="material-symbols-outlined text-primary-teal text-3xl">assignment</span>
-                        <h4 class="font-list-item text-list-item text-on-background">Trade Licensing</h4>
+                    <div class="p-6 border border-border-light rounded-xl flex flex-col gap-3 hover:border-primary-teal transition-colors">
+                        <span class="material-symbols-outlined text-primary-teal text-2xl">assignment</span>
+                        <h4 class="text-base font-bold text-near-black">Trade Licensing</h4>
                     </div>
-                    <!-- Service 5 -->
-                    <div
-                        class="p-lg border border-border-light flex flex-col gap-sm hover:border-primary-teal transition-colors duration-300">
-                        <span class="material-symbols-outlined text-primary-teal text-3xl">request_quote</span>
-                        <h4 class="font-list-item text-list-item text-on-background">Tax &amp; VAT Advisory</h4>
+                    <div class="p-6 border border-border-light rounded-xl flex flex-col gap-3 hover:border-primary-teal transition-colors">
+                        <span class="material-symbols-outlined text-primary-teal text-2xl">request_quote</span>
+                        <h4 class="text-base font-bold text-near-black">Tax &amp; VAT Advisory</h4>
                     </div>
-                    <!-- Service 6 -->
-                    <div
-                        class="p-lg border border-border-light flex flex-col gap-sm hover:border-primary-teal transition-colors duration-300">
-                        <span class="material-symbols-outlined text-primary-teal text-3xl">apartment</span>
-                        <h4 class="font-list-item text-list-item text-on-background">Office Solutions</h4>
+                    <div class="p-6 border border-border-light rounded-xl flex flex-col gap-3 hover:border-primary-teal transition-colors">
+                        <span class="material-symbols-outlined text-primary-teal text-2xl">apartment</span>
+                        <h4 class="text-base font-bold text-near-black">Office Solutions</h4>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Roadmap -->
-        <section class="py-massive bg-surface-dim fade-in-up" style="animation-delay: 0.3s;">
-            <div class="max-w-[1440px] mx-auto px-8">
-                <h2 class="font-h2-heading text-h2-heading text-center mb-jumbo text-on-background">Your Roadmap to
-                    Success</h2>
+        <section class="py-16 md:py-24 bg-surface-container-low animate-fade-in-up">
+            <div class="max-w-[1440px] mx-auto px-4 md:px-8">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-12 text-near-black">Your Roadmap to Success</h2>
                 <div class="relative max-w-4xl mx-auto">
-                    <!-- Connecting Line -->
-                    <div
-                        class="hidden md:block absolute top-1/2 left-0 w-full h-[2px] bg-border-light -translate-y-1/2 z-0">
-                    </div>
-                    <div class="flex flex-col md:flex-row justify-between gap-xl relative z-10">
-                        <!-- Step 1 -->
+                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-[2px] bg-border-light -translate-y-1/2 z-0"></div>
+                    <div class="flex flex-col md:flex-row justify-between gap-8 relative z-10">
                         <div class="flex flex-col items-center text-center group">
-                            <div
-                                class="w-12 h-12 rounded-full bg-white border-2 border-primary-teal flex items-center justify-center font-h2-heading text-h2-heading text-primary-teal mb-md group-hover:bg-primary-teal group-hover:text-white transition-colors duration-300 shadow-sm">
-                                1</div>
-                            <h4 class="font-list-item text-list-item text-on-background mb-xs">Initial Consult</h4>
+                            <div class="w-12 h-12 rounded-full bg-white border-2 border-primary-teal flex items-center justify-center text-xl font-extrabold text-primary-teal mb-3 group-hover:bg-primary-teal group-hover:text-white transition-colors shadow-sm">1</div>
+                            <h4 class="text-sm font-bold text-near-black">Initial Consult</h4>
                         </div>
-                        <!-- Step 2 -->
                         <div class="flex flex-col items-center text-center group">
-                            <div
-                                class="w-12 h-12 rounded-full bg-white border-2 border-primary-teal flex items-center justify-center font-h2-heading text-h2-heading text-primary-teal mb-md group-hover:bg-primary-teal group-hover:text-white transition-colors duration-300 shadow-sm">
-                                2</div>
-                            <h4 class="font-list-item text-list-item text-on-background mb-xs">Documentation</h4>
+                            <div class="w-12 h-12 rounded-full bg-white border-2 border-primary-teal flex items-center justify-center text-xl font-extrabold text-primary-teal mb-3 group-hover:bg-primary-teal group-hover:text-white transition-colors shadow-sm">2</div>
+                            <h4 class="text-sm font-bold text-near-black">Documentation</h4>
                         </div>
-                        <!-- Step 3 -->
                         <div class="flex flex-col items-center text-center group">
-                            <div
-                                class="w-12 h-12 rounded-full bg-white border-2 border-primary-teal flex items-center justify-center font-h2-heading text-h2-heading text-primary-teal mb-md group-hover:bg-primary-teal group-hover:text-white transition-colors duration-300 shadow-sm">
-                                3</div>
-                            <h4 class="font-list-item text-list-item text-on-background mb-xs">MoA Signing</h4>
+                            <div class="w-12 h-12 rounded-full bg-white border-2 border-primary-teal flex items-center justify-center text-xl font-extrabold text-primary-teal mb-3 group-hover:bg-primary-teal group-hover:text-white transition-colors shadow-sm">3</div>
+                            <h4 class="text-sm font-bold text-near-black">MoA Signing</h4>
                         </div>
-                        <!-- Step 4 -->
                         <div class="flex flex-col items-center text-center group">
-                            <div
-                                class="w-12 h-12 rounded-full bg-white border-2 border-primary-teal flex items-center justify-center font-h2-heading text-h2-heading text-primary-teal mb-md group-hover:bg-primary-teal group-hover:text-white transition-colors duration-300 shadow-sm">
-                                4</div>
-                            <h4 class="font-list-item text-list-item text-on-background mb-xs">License Issue</h4>
+                            <div class="w-12 h-12 rounded-full bg-white border-2 border-primary-teal flex items-center justify-center text-xl font-extrabold text-primary-teal mb-3 group-hover:bg-primary-teal group-hover:text-white transition-colors shadow-sm">4</div>
+                            <h4 class="text-sm font-bold text-near-black">License Issue</h4>
                         </div>
-                        <!-- Step 5 -->
                         <div class="flex flex-col items-center text-center group">
-                            <div
-                                class="w-12 h-12 rounded-full bg-white border-2 border-primary-teal flex items-center justify-center font-h2-heading text-h2-heading text-primary-teal mb-md group-hover:bg-primary-teal group-hover:text-white transition-colors duration-300 shadow-sm">
-                                5</div>
-                            <h4 class="font-list-item text-list-item text-on-background mb-xs">Operational</h4>
+                            <div class="w-12 h-12 rounded-full bg-white border-2 border-primary-teal flex items-center justify-center text-xl font-extrabold text-primary-teal mb-3 group-hover:bg-primary-teal group-hover:text-white transition-colors shadow-sm">5</div>
+                            <h4 class="text-sm font-bold text-near-black">Operational</h4>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- FAQ -->
-        <section class="py-massive bg-surface-container-lowest fade-in-up" id="faq" style="animation-delay: 0.4s;">
-            <div class="max-w-[800px] mx-auto px-8">
-                <h2 class="font-h2-heading text-h2-heading text-center mb-jumbo text-on-background">Frequently Asked
-                    Questions</h2>
-                <div class="space-y-md">
-                    <!-- FAQ Item 1 -->
-                    <details
-                        class="group border border-border-light p-lg [&amp;_summary::-webkit-details-marker]:hidden bg-white">
-                        <summary
-                            class="flex cursor-pointer items-center justify-between gap-1.5 text-on-background font-list-item text-list-item">
+        <section class="py-16 md:py-24 bg-white" id="faq">
+            <div class="max-w-[800px] mx-auto px-4 md:px-8">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-10 text-near-black">Frequently Asked Questions</h2>
+                <div class="space-y-3">
+                    <details class="group border border-border-light rounded-xl bg-white overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-base font-bold text-on-surface">
                             Minimum capital requirement for Dubai Free Zone company?
-                            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
-                                <span class="material-symbols-outlined">expand_more</span>
-                            </span>
+                            <span class="shrink-0 transition duration-300 group-open:-rotate-180"><span class="material-symbols-outlined">expand_more</span></span>
                         </summary>
-                        <p class="mt-4 font-body-regular text-body-regular text-secondary-gray leading-relaxed">
-                            Capital requirements vary significantly depending on the specific Free Zone and the type of
-                            activity. Some require no upfront capital, while others may require AED 50,000 to AED
-                            300,000. Our consultants will guide you to the most efficient option based on your business
-                            model.
+                        <p class="px-5 pb-5 text-[15px] leading-7 text-secondary-gray">
+                            Capital requirements vary significantly depending on the specific Free Zone and the type of activity. Some require no upfront capital, while others may require AED 50,000 to AED 300,000. Our consultants will guide you to the most efficient option based on your business model.
                         </p>
                     </details>
-                    <!-- FAQ Item 2 -->
-                    <details
-                        class="group border border-border-light p-lg [&amp;_summary::-webkit-details-marker]:hidden bg-white">
-                        <summary
-                            class="flex cursor-pointer items-center justify-between gap-1.5 text-on-background font-list-item text-list-item">
+                    <details class="group border border-border-light rounded-xl bg-white overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-base font-bold text-on-surface">
                             Can I own 100% of my company in mainland Dubai?
-                            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
-                                <span class="material-symbols-outlined">expand_more</span>
-                            </span>
+                            <span class="shrink-0 transition duration-300 group-open:-rotate-180"><span class="material-symbols-outlined">expand_more</span></span>
                         </summary>
-                        <p class="mt-4 font-body-regular text-body-regular text-secondary-gray leading-relaxed">
-                            Yes. Recent legislative changes in the UAE allow for 100% foreign ownership in mainland
-                            companies for over 1,000 commercial and industrial activities. A local sponsor is no longer
-                            mandatory for these specific activities, though a Local Service Agent may be required for
-                            professional licenses.
+                        <p class="px-5 pb-5 text-[15px] leading-7 text-secondary-gray">
+                            Yes. Recent legislative changes in the UAE allow for 100% foreign ownership in mainland companies for over 1,000 commercial and industrial activities. A local sponsor is no longer mandatory for these specific activities.
                         </p>
                     </details>
-                    <!-- FAQ Item 3 -->
-                    <details
-                        class="group border border-border-light p-lg [&amp;_summary::-webkit-details-marker]:hidden bg-white">
-                        <summary
-                            class="flex cursor-pointer items-center justify-between gap-1.5 text-on-background font-list-item text-list-item">
+                    <details class="group border border-border-light rounded-xl bg-white overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-base font-bold text-on-surface">
                             How long does the company formation process take?
-                            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
-                                <span class="material-symbols-outlined">expand_more</span>
-                            </span>
+                            <span class="shrink-0 transition duration-300 group-open:-rotate-180"><span class="material-symbols-outlined">expand_more</span></span>
                         </summary>
-                        <p class="mt-4 font-body-regular text-body-regular text-secondary-gray leading-relaxed">
-                            Standard Free Zone setups can be completed in as little as 3-5 working days once all
-                            documentation is submitted. Mainland setups typically take 1-3 weeks depending on the
-                            required external approvals from regulatory bodies.
+                        <p class="px-5 pb-5 text-[15px] leading-7 text-secondary-gray">
+                            Standard Free Zone setups can be completed in as little as 3-5 working days once all documentation is submitted. Mainland setups typically take 1-3 weeks depending on the required external approvals.
                         </p>
                     </details>
-                    <!-- FAQ Item 4 -->
-                    <details
-                        class="group border border-border-light p-lg [&amp;_summary::-webkit-details-marker]:hidden bg-white">
-                        <summary
-                            class="flex cursor-pointer items-center justify-between gap-1.5 text-on-background font-list-item text-list-item">
+                    <details class="group border border-border-light rounded-xl bg-white overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-base font-bold text-on-surface">
                             Do I need a physical office for my license?
-                            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
-                                <span class="material-symbols-outlined">expand_more</span>
-                            </span>
+                            <span class="shrink-0 transition duration-300 group-open:-rotate-180"><span class="material-symbols-outlined">expand_more</span></span>
                         </summary>
-                        <p class="mt-4 font-body-regular text-body-regular text-secondary-gray leading-relaxed">
-                            It depends on the jurisdiction. Many Free Zones offer 'Flexi-desk' or virtual office
-                            solutions which satisfy the legal requirement for a lease agreement. Mainland licenses
-                            generally require a physical office space, though business centers offer flexible co-working
-                            solutions.
+                        <p class="px-5 pb-5 text-[15px] leading-7 text-secondary-gray">
+                            It depends on the jurisdiction. Many Free Zones offer 'Flexi-desk' or virtual office solutions which satisfy the legal requirement for a lease agreement. Mainland licenses generally require a physical office space.
                         </p>
                     </details>
                 </div>
             </div>
         </section>
     </main>
+
     <!-- Footer -->
-    <!-- Footer -->
-    <footer class="w-full py-24 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
-        <div class="max-w-[1440px] mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-x-18 gap-y-12">
-            <div class="col-span-1 md:col-span-1">
-                <span class="text-xl font-bold text-slate-900 dark:text-white mb-6 block">Indo Gulf Audit</span>
-                <p class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400">
-                    A trusted outsourcing partner specializing in end-to-end accounting, bookkeeping, taxation, payroll, and financial reporting services for CPAs, accounting firms, and SMEs across the USA, UAE, Canada, and Australia.
-                </p>
+    <footer class="w-full py-16 bg-slate-900 text-slate-300">
+        <div class="max-w-[1440px] mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-x-12 gap-y-10">
+            <div class="md:col-span-1">
+                <div class="flex items-center gap-3 mb-4"><img src="assets/logo.jpeg" alt="Indo Gulf Audit" class="w-10 h-10 rounded-full border-2 border-amber-400 object-cover" /><span class="text-lg font-bold text-white">Indo Gulf Audit</span></div>
+                <p class="text-sm leading-relaxed text-slate-400">A trusted outsourcing partner specializing in end-to-end accounting, bookkeeping, taxation, payroll, and financial reporting services for CPAs, accounting firms, and SMEs across the USA, UAE, Canada, and Australia.</p>
+                <div class="social-links mt-5">
+                    <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                    <a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a href="https://wa.me/message" class="social-link" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+                    <a href="#" class="social-link" aria-label="X / Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                </div>
             </div>
-            <div class="col-span-1">
-                <h4 class="font-list-item text-list-item text-near-black mb-md dark:text-white">Quick Links</h4>
-                <ul class="space-y-sm">
-                    <li><a class="font-['Work_Sans'] text-sm leading-relaxed text-cyan-700 font-semibold cursor-pointer"
-                            href="index.html">Home</a></li>
-                    <li><a class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-cyan-700 transition-all duration-200 hover:translate-x-1 cursor-pointer"
-                            href="about.html">About Us</a></li>
-                    <li><a class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-cyan-700 transition-all duration-200 hover:translate-x-1 cursor-pointer"
-                            href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="col-span-1">
-                <h4 class="font-list-item text-list-item text-near-black mb-md dark:text-white">Services</h4>
-                <ul class="space-y-sm">
-                    <li><a class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-cyan-700 transition-all duration-200 hover:translate-x-1 cursor-pointer"
-                            href="uae-services.html">UAE Services</a></li>
-                    <li><a class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-cyan-700 transition-all duration-200 hover:translate-x-1 cursor-pointer"
-                            href="audit-outsourcing.html">Audit Firm Outsourcing</a></li>
-                    <li><a class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-cyan-700 transition-all duration-200 hover:translate-x-1 cursor-pointer"
-                            href="company-formation.html">Company Formation</a></li>
-                </ul>
-            </div>
-            <div
-                class="col-span-1 md:col-span-3 mt-xl pt-xl border-t border-slate-200 dark:border-slate-800 text-center">
-                <p class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400">
-                    © 2026 Indo Gulf Audit. All Rights Reserved.
-                </p>
-            </div>
+            <div class="col-span-1"><h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">Quick Links</h4><ul class="space-y-2"><li><a class="text-sm text-slate-400 hover:text-primary-teal transition-colors" href="index.html">Home</a></li><li><a class="text-sm text-slate-400 hover:text-primary-teal transition-colors" href="about.html">About Us</a></li><li><a class="text-sm text-slate-400 hover:text-primary-teal transition-colors" href="contact.html">Contact Us</a></li></ul></div>
+            <div class="col-span-1"><h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">Services</h4><ul class="space-y-2"><li><a class="text-sm text-slate-400 hover:text-primary-teal transition-colors" href="uae-services.html">India &amp; UAE Services</a></li><li><a class="text-sm text-slate-400 hover:text-primary-teal transition-colors" href="audit-outsourcing.html">Audit Firm Outsourcing</a></li><li><a class="text-sm text-slate-400 hover:text-primary-teal transition-colors" href="company-formation.html">Company Formation</a></li></ul></div>
+            <div class="col-span-1"><h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">Software</h4><ul class="space-y-2"><li class="text-sm text-slate-400">Tally</li><li class="text-sm text-slate-400">Busy</li><li class="text-sm text-slate-400">QuickBooks</li><li class="text-sm text-slate-400">Zoho Books</li><li class="text-sm text-slate-400">Xero</li></ul></div>
+            <div class="col-span-1 md:col-span-4 mt-6 pt-6 border-t border-slate-700 text-center"><p class="text-sm text-slate-500">&copy; 2026 Indo Gulf Audit. All Rights Reserved.</p></div>
         </div>
     </footer>
-<script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('is-visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            document.querySelectorAll('.animate-fade-in-up, .fade-in-up').forEach((el) => {
-                observer.observe(el);
-            });
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

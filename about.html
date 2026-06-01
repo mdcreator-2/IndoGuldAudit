@@ -1,237 +1,156 @@
 <!DOCTYPE html>
-
 <html class="light" lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>About Us | Indo Gulf Audit</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
+    <title>About Us | Indo Gulf Audit — Our Team &amp; Story</title>
+    <meta name="description" content="Learn about Indo Gulf Audit's expert team of chartered accountants, tax advisors, and financial consultants serving businesses across India, USA, UAE, Canada, and Australia." />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png" />
+    <link rel="apple-touch-icon" href="assets/favicon-192.png" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
-                    "colors": {
-                        "accent-purple": "#7A00DF",
-                        "inverse-surface": "#2d3133",
-                        "on-secondary-fixed": "#001258",
+                    colors: {
                         "cta-blue": "#4054B2",
-                        "surface-dim": "#d7dadd",
-                        "primary-fixed-dim": "#79d2f2",
-                        "surface-container": "#ebeef1",
-                        "surface-tint": "#00677f",
-                        "surface-variant": "#dfe3e5",
-                        "surface": "#f6fafc",
-                        "border-light": "#DDDDDD",
-                        "on-tertiary-fixed": "#2e1500",
-                        "on-primary-fixed": "#001f28",
-                        "tertiary-fixed-dim": "#ffb778",
-                        "on-surface": "#181c1e",
-                        "near-black": "#080808",
-                        "surface-container-high": "#e5e9eb",
-                        "surface-container-highest": "#dfe3e5",
-                        "background": "#f6fafc",
-                        "success": "#61CE70",
-                        "on-primary": "#ffffff",
-                        "on-primary-fixed-variant": "#004e60",
-                        "secondary": "#4357b5",
-                        "inverse-on-surface": "#eef1f3",
-                        "secondary-fixed-dim": "#b9c3ff",
-                        "on-tertiary": "#ffffff",
-                        "on-surface-variant": "#3e484d",
-                        "on-error": "#ffffff",
-                        "on-primary-container": "#fafdff",
-                        "primary-container": "#087f9c",
-                        "primary-fixed": "#b7eaff",
-                        "on-background": "#181c1e",
-                        "on-tertiary-fixed-variant": "#6c3a00",
-                        "on-secondary-fixed-variant": "#283e9b",
-                        "dark-gray": "#1D1D1D",
-                        "secondary-container": "#879afd",
-                        "tertiary": "#884d0a",
-                        "tertiary-fixed": "#ffdcc1",
-                        "error": "#CF2E2E",
-                        "outline-variant": "#bec8cd",
-                        "outline": "#6f797d",
-                        "tertiary-container": "#a66524",
-                        "surface-container-lowest": "#ffffff",
-                        "accent-teal": "#079B95",
-                        "accent-blue": "#007BFF",
-                        "surface-container-low": "#f1f4f6",
-                        "warning": "#FCB900",
-                        "secondary-gray": "#6C757D",
-                        "on-tertiary-container": "#fffbff",
-                        "on-secondary-container": "#142c8b",
-                        "error-container": "#ffdad6",
-                        "surface-bright": "#f6fafc",
-                        "primary-navy": "#1994C3",
-                        "primary": "#00647c",
-                        "on-secondary": "#ffffff",
-                        "inverse-primary": "#79d2f2",
                         "primary-teal": "#1985A2",
-                        "secondary-fixed": "#dee1ff",
-                        "surface-modal": "#FFFFFF",
-                        "on-error-container": "#93000a"
+                        "primary-navy": "#1994C3",
+                        "near-black": "#080808",
+                        "surface": "#f6fafc",
+                        "surface-variant": "#dfe3e5",
+                        "surface-container": "#ebeef1",
+                        "surface-container-low": "#f1f4f6",
+                        "surface-container-high": "#e5e9eb",
+                        "surface-tint": "#00677f",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#181c1e",
+                        "on-surface-variant": "#3e484d",
+                        "on-background": "#181c1e",
+                        "secondary-gray": "#6C757D",
+                        "border-light": "#DDDDDD",
+                        "primary-fixed-dim": "#79d2f2",
+                        "primary-container": "#087f9c",
+                        "warning": "#FCB900",
+                        "success": "#61CE70",
+                        "background": "#f6fafc",
+                        "dark-gray": "#1D1D1D",
                     },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
+                    spacing: {
+                        xs: "4px", sm: "8px", "sm-md": "12px", md: "16px",
+                        lg: "20px", xl: "32px", jumbo: "72px", massive: "136px",
+                        max_width: "1440px", gutter: "16px"
                     },
-                    "spacing": {
-                        "sm-md": "12px",
-                        "max_width": "1440px",
-                        "sm": "8px",
-                        "xl": "32px",
-                        "massive": "136px",
-                        "jumbo": "72px",
-                        "gutter": "16px",
-                        "base": "4px",
-                        "xs": "4px",
-                        "md": "16px",
-                        "lg": "20px"
+                    fontFamily: {
+                        sans: ["Inter", "Work Sans", "system-ui", "sans-serif"],
                     },
-                    "fontFamily": {
-                        "h2-heading": ["Verdana"],
-                        "button-text": ["Verdana"],
-                        "body-regular": ["Verdana"],
-                        "h1-display": ["Verdana"],
-                        "list-item": ["Verdana"],
-                        "body-large": ["Verdana"],
-                        "h5-subheading": ["Verdana"],
-                        "ui-label": ["Verdana"],
-                        "caption": ["Verdana"],
-                        "input-text": ["Verdana"]
-                    },
-                    "fontSize": {
-                        "h2-heading": ["30px", { "lineHeight": "33px", "letterSpacing": "0px", "fontWeight": "700" }],
-                        "button-text": ["18px", { "lineHeight": "36px", "letterSpacing": "0px", "fontWeight": "400" }],
-                        "body-regular": ["18px", { "lineHeight": "36px", "letterSpacing": "0px", "fontWeight": "400" }],
-                        "h1-display": ["30px", { "lineHeight": "36px", "letterSpacing": "0px", "fontWeight": "700" }],
-                        "list-item": ["18px", { "lineHeight": "36px", "letterSpacing": "0px", "fontWeight": "600" }],
-                        "body-large": ["20px", { "lineHeight": "40px", "letterSpacing": "0px", "fontWeight": "400" }],
-                        "h5-subheading": ["28px", { "lineHeight": "56px", "letterSpacing": "0px", "fontWeight": "700" }],
-                        "ui-label": ["15px", { "lineHeight": "30px", "letterSpacing": "0px", "fontWeight": "501" }],
-                        "caption": ["24px", { "lineHeight": "26.4px", "letterSpacing": "0px", "fontWeight": "700" }],
-                        "input-text": ["15px", { "lineHeight": "17.25px", "letterSpacing": "0px", "fontWeight": "400" }]
+                    borderRadius: {
+                        DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem"
                     }
-                }
-            }
+                },
+            },
         }
     </script>
-    <style>
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-
-        .delay-100 {
-            animation-delay: 100ms;
-        }
-
-        .delay-200 {
-            animation-delay: 200ms;
-        }
-
-        .delay-300 {
-            animation-delay: 300ms;
-        }
-    </style>
 </head>
 
-<body class="bg-background text-on-surface font-body-regular antialiased">
+<body class="bg-background text-on-surface font-sans antialiased pt-[80px]">
     <!-- TopNavBar -->
-    <!-- TopNavBar -->
-    <nav
-        class="fixed top-0 w-full z-50 h-[80px] bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800">
+    <nav class="fixed top-0 w-full z-50 h-[80px] bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
         <div class="flex justify-between items-center max-w-[1440px] mx-auto px-8 h-full">
-            <div class="text-lg font-black tracking-tighter text-slate-900 dark:text-white flex flex-col">
-                <span>Indo Gulf Audit</span>
-                <span class="text-[13px] font-semibold text-slate-500 tracking-normal mt-0.5">Accounting &amp; Taxation Trusted Partner</span>
+            <a href="index.html" class="nav-brand">
+                <img src="assets/logo.jpeg" alt="Indo Gulf Audit Logo" class="nav-logo" />
+                <div class="flex flex-col">
+                    <span class="text-lg font-extrabold tracking-tight text-slate-900">Indo Gulf Audit</span>
+                    <span class="text-[11px] font-semibold text-slate-500 tracking-normal">Accounting &amp; Taxation Trusted Partner</span>
+                </div>
+            </a>
+            <div class="hidden lg:flex items-center space-x-6 desktop-nav">
+                <a class="font-['Inter'] text-sm font-medium tracking-wide text-slate-600 hover:text-primary-teal transition-colors duration-300" href="index.html">Home</a>
+                <a class="font-['Inter'] text-sm font-medium tracking-wide text-slate-600 hover:text-primary-teal transition-colors duration-300" href="uae-services.html">India &amp; UAE Services</a>
+                <a class="font-['Inter'] text-sm font-medium tracking-wide text-slate-600 hover:text-primary-teal transition-colors duration-300" href="audit-outsourcing.html">Audit Firm Outsourcing</a>
+                <a class="font-['Inter'] text-sm font-medium tracking-wide text-slate-600 hover:text-primary-teal transition-colors duration-300" href="company-formation.html">Company Formation</a>
+                <a class="font-['Inter'] text-sm font-semibold tracking-wide text-primary-teal border-b-2 border-primary-teal pb-1" href="about.html">About Us</a>
+                <a class="font-['Inter'] text-sm font-medium tracking-wide text-slate-600 hover:text-primary-teal transition-colors duration-300" href="contact.html">Contact Us</a>
             </div>
-            <div class="hidden md:flex items-center space-x-6">
-                <a class="font-['Work_Sans'] text-sm font-medium tracking-wide text-slate-600 dark:text-slate-400 hover:text-cyan-700 transition-colors duration-300 active:scale-95 transition-transform"
-                    href="index.html">Home</a>
-                <a class="font-['Work_Sans'] text-sm font-medium tracking-wide text-slate-600 dark:text-slate-400 hover:text-cyan-700 transition-colors duration-300 active:scale-95 transition-transform"
-                    href="uae-services.html">UAE Services</a>
-                <a class="font-['Work_Sans'] text-sm font-medium tracking-wide text-slate-600 dark:text-slate-400 hover:text-cyan-700 transition-colors duration-300 active:scale-95 transition-transform"
-                    href="audit-outsourcing.html">Audit Firm Outsourcing</a>
-                <a class="font-['Work_Sans'] text-sm font-medium tracking-wide text-slate-600 dark:text-slate-400 hover:text-cyan-700 transition-colors duration-300 active:scale-95 transition-transform"
-                    href="company-formation.html">Company Formation</a>
-                <a class="font-['Work_Sans'] text-sm font-medium tracking-wide text-cyan-700 dark:text-cyan-500 border-b-2 border-cyan-700 pb-1 active:scale-95 transition-transform"
-                    href="about.html">About Us</a>
-                <a class="font-['Work_Sans'] text-sm font-medium tracking-wide text-slate-600 dark:text-slate-400 hover:text-cyan-700 transition-colors duration-300 active:scale-95 transition-transform"
-                    href="contact.html">Contact Us</a>
-            </div>
-            <a class="bg-cta-blue text-on-secondary px-[40px] py-[10px] rounded h-[58px] flex items-center justify-center font-button-text text-button-text font-bold active:scale-95 transition-transform"
-                href="contact.html">Book Free Consultation</a>
+            <a class="desktop-cta hidden lg:flex bg-cta-blue text-on-secondary px-8 py-2.5 rounded-lg h-[48px] items-center justify-center text-sm font-bold hover:bg-opacity-90 transition-all shadow-md" href="contact.html">Book Free Consultation</a>
+            <button class="hamburger-btn lg:hidden" id="menu-toggle" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav-overlay" id="mobile-overlay"></div>
+    <div class="mobile-nav-panel" id="mobile-panel">
+        <button class="close-btn" id="menu-close" aria-label="Close menu">
+            <span class="material-symbols-outlined text-2xl">close</span>
+        </button>
+        <div class="flex items-center gap-3 mt-2">
+            <img src="assets/logo.jpeg" alt="Logo" class="w-10 h-10 rounded-full border-2 border-amber-400 object-cover" />
+            <div>
+                <div class="font-bold text-slate-900">Indo Gulf Audit</div>
+                <div class="text-xs text-slate-500">Accounting &amp; Taxation</div>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="uae-services.html">India &amp; UAE Services</a>
+            <a href="audit-outsourcing.html">Audit Firm Outsourcing</a>
+            <a href="company-formation.html">Company Formation</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="mobile-cta">
+            <a class="block w-full bg-cta-blue text-white text-center py-3 rounded-lg font-semibold text-sm" href="contact.html">Book Free Consultation</a>
+        </div>
+    </div>
+
     <!-- Hero Section -->
-    <section class="bg-primary-teal relative overflow-hidden flex items-center min-h-[600px] py-jumbo">
+    <section class="bg-primary-teal relative overflow-hidden flex items-center min-h-[400px] md:min-h-[520px] py-16 md:py-20">
         <div class="absolute inset-0 opacity-10"
             style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;">
         </div>
-        <div
-            class="max-w-[1440px] mx-auto px-8 w-full relative z-10 grid grid-cols-1 md:grid-cols-2 gap-jumbo items-center">
-            <div class="space-y-xl fade-in-up">
-                <span
-                    class="inline-flex items-center gap-xs bg-surface-tint/20 text-on-primary px-md py-xs rounded font-ui-label text-ui-label">
+        <div class="max-w-[1440px] mx-auto px-8 w-full relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 animate-fade-in-up">
+                <span class="inline-flex items-center gap-2 bg-white/15 text-white px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm">
                     <span class="material-symbols-outlined text-sm">workspace_premium</span>
                     Premium Advisory
                 </span>
-                <h1 class="font-h1-display text-h1-display text-on-primary md:text-[56px] md:leading-[64px]">Global
-                    Outsourced Accounting &amp; Financial Services</h1>
-                <p class="font-body-large text-body-large text-primary-fixed-dim max-w-2xl">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight">Global Outsourced Accounting &amp; Financial Services</h1>
+                <p class="text-base md:text-lg text-primary-fixed-dim max-w-2xl leading-relaxed">
                     Simplifying Accounting, Tax, Payroll &amp; Financial Operations for Global Businesses across USA, UAE, Canada, and Australia.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-md pt-md">
-                    <a href="uae-services.html"
-                        class="bg-cta-blue text-on-primary px-[40px] py-[10px] rounded h-[58px] font-button-text text-button-text hover:bg-secondary transition-colors shadow-md flex items-center justify-center">
+                <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                    <a href="uae-services.html" class="bg-cta-blue text-white px-8 h-[52px] rounded-lg text-sm font-bold hover:bg-opacity-90 transition-colors shadow-md flex items-center justify-center">
                         Our Expertise
                     </a>
-                    <a href="contact.html"
-                        class="border border-on-primary text-on-primary px-[40px] py-[10px] rounded-none h-[58px] font-button-text text-button-text hover:bg-surface-tint/30 transition-colors flex items-center justify-center">
+                    <a href="contact.html" class="border-2 border-white text-white px-8 h-[52px] rounded-lg text-sm font-bold hover:bg-white/10 transition-colors flex items-center justify-center">
                         Contact Us
                     </a>
                 </div>
             </div>
-            <div class="fade-in-up delay-200 relative hidden md:block">
-                <div class="absolute inset-0 border-4 border-warning transform translate-x-4 translate-y-4"></div>
-                <img alt="Corporate office interior" class="w-full h-auto object-cover relative z-10 aspect-[4/3]"
-                    data-alt="Modern high-end corporate office interior with glass walls, soft warm lighting, and sleek modern furniture conveying professional financial authority"
+            <div class="relative hidden md:block animate-fade-in-up" style="animation-delay: 0.2s;">
+                <div class="absolute inset-0 border-4 border-amber-400 transform translate-x-4 translate-y-4 rounded-lg"></div>
+                <img alt="Corporate office interior" class="w-full h-auto object-cover relative z-10 aspect-[4/3] rounded-lg shadow-xl"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-ySWvAuXYFntoA88CkY-mUnCanOpjA51IOLHejpy_kj7jpZBIc0qxo-IeXMsdflKaGQMmsvZIrmKSaucTq5QS7Qs4NpK2uOqINxtBT3nGKLlIuJNEHc7s1PwAyejMtpEAmPPPT3ABJT_ZwgcKwUSWd_tFwL42iBvoUQMeu__QTK7SWW_JrhQIgCM67g4SfITz5JPskFS6RTc4nQymlwwMj19OuqGJNXiG2MH0a_vNMzRXQ9IwMFTSDDy1W5PAjP3pRH5mSq5LrGo" />
             </div>
         </div>
     </section>
+
     <!-- Our Story -->
-    <section class="py-massive bg-surface">
+    <section class="py-16 md:py-24 bg-surface">
         <div class="max-w-[1440px] mx-auto px-8 w-full">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-jumbo">
-                <div class="space-y-xl fade-in-up">
-                    <h2 class="font-h2-heading text-h2-heading text-on-surface">Who We Are</h2>
-                    <div class="space-y-md font-body-regular text-body-regular text-on-surface-variant">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+                <div class="space-y-5 animate-fade-in-up">
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-on-surface">Who We Are</h2>
+                    <div class="space-y-4 text-[15px] leading-7 text-on-surface-variant">
                         <p>
                             Indo Gulf is a trusted global outsourcing partner, specializing in end-to-end accounting, bookkeeping, taxation, payroll, and financial process management for clients across the USA, Australia, Canada, UAE, and other international markets.
                         </p>
@@ -240,163 +159,201 @@
                         </p>
                     </div>
                 </div>
-                <div class="space-y-xl fade-in-up delay-200">
-                    <h2 class="font-h2-heading text-h2-heading text-on-surface">Why Partner with Indo Gulf</h2>
-                    <div class="space-y-md font-body-regular text-body-regular text-on-surface-variant">
+                <div class="space-y-5 animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-on-surface">Why Partner with Indo Gulf</h2>
+                    <div class="space-y-4 text-[15px] leading-7 text-on-surface-variant">
                         <p>
-                            Expert Teams: Professionals with experience in international accounting standards and local regulations. Scalable Solutions: Flexible engagement models — from project-based to full-time dedicated teams.
+                            <strong>Expert Teams:</strong> Professionals with experience in international accounting standards and local regulations. <strong>Scalable Solutions:</strong> Flexible engagement models — from project-based to full-time dedicated teams.
                         </p>
                         <p>
-                            Industry-Leading Tools: We work with QuickBooks, Xero, MYOB, Zoho Books, Sage, and more. Complete Confidentiality: Robust data security and NDA-backed client partnerships.
+                            <strong>Industry-Leading Tools:</strong> We work with Tally, Busy, QuickBooks, Xero, Zoho Books, and more. <strong>Complete Confidentiality:</strong> Robust data security and NDA-backed client partnerships.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Stats Bar -->
-    <section class="py-jumbo bg-surface-container">
+    <section class="py-12 md:py-16 bg-surface-container">
         <div class="max-w-[1440px] mx-auto px-8 w-full">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-xl text-center divide-x divide-border-light">
-                <div class="fade-in-up">
-                    <div class="font-h1-display text-h1-display text-primary-teal mb-sm">10+</div>
-                    <div class="font-ui-label text-ui-label text-on-surface-variant">Years of Excellence</div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="animate-fade-in-up">
+                    <div class="text-3xl md:text-4xl font-extrabold text-primary-teal mb-1">10+</div>
+                    <div class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider">Years of Excellence</div>
                 </div>
-                <div class="fade-in-up delay-100">
-                    <div class="font-h1-display text-h1-display text-primary-teal mb-sm">4</div>
-                    <div class="font-ui-label text-ui-label text-on-surface-variant">Countries Served</div>
+                <div class="animate-fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="text-3xl md:text-4xl font-extrabold text-primary-teal mb-1">4</div>
+                    <div class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider">Countries Served</div>
                 </div>
-                <div class="fade-in-up delay-200">
-                    <div class="font-h1-display text-h1-display text-primary-teal mb-sm">100%</div>
-                    <div class="font-ui-label text-ui-label text-on-surface-variant">Compliance Rate</div>
+                <div class="animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="text-3xl md:text-4xl font-extrabold text-primary-teal mb-1">100%</div>
+                    <div class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider">Compliance Rate</div>
                 </div>
-                <div class="fade-in-up delay-300">
-                    <div class="font-h1-display text-h1-display text-primary-teal mb-sm">24/7</div>
-                    <div class="font-ui-label text-ui-label text-on-surface-variant">Expert Support</div>
+                <div class="animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="text-3xl md:text-4xl font-extrabold text-primary-teal mb-1">24/7</div>
+                    <div class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider">Expert Support</div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Team Members Section -->
+    <section class="py-16 md:py-24 bg-background">
+        <div class="max-w-[1440px] mx-auto px-8 w-full">
+            <div class="text-center mb-12 animate-fade-in-up">
+                <span class="text-sm font-bold text-primary-teal uppercase tracking-widest block mb-2">Our Team</span>
+                <h2 class="text-2xl md:text-3xl font-extrabold text-on-surface">Meet the Experts Behind Indo Gulf</h2>
+                <p class="text-[15px] text-on-surface-variant mt-3 max-w-2xl mx-auto leading-7">A dedicated team of professionals committed to delivering excellence in accounting, taxation, and financial advisory.</p>
+            </div>
+            <div class="team-grid">
+                <!-- Khalid Siddiqui -->
+                <div class="team-card">
+                    <div class="team-avatar">KS</div>
+                    <h3>Khalid Siddiqui</h3>
+                    <span class="team-role">Founder &amp; Managing Consultant</span>
+                    <p>Expertise in Taxation, Accounting, GST Compliance, Financial Operations, Payroll, Business Registration, and UAE VAT Consultancy Services for businesses and professionals across India &amp; UAE.</p>
+                </div>
+                <!-- CA Nitesh Arora -->
+                <div class="team-card">
+                    <div class="team-avatar">NA</div>
+                    <h3>CA Nitesh Arora</h3>
+                    <span class="team-role">Chartered Accountant | Tax &amp; Compliance Advisor</span>
+                    <p>Providing professional support in taxation, accounting, GST compliance, audit coordination, and financial consultancy.</p>
+                </div>
+                <!-- Manzar Hasan -->
+                <div class="team-card">
+                    <div class="team-avatar">MH</div>
+                    <h3>Manzar Hasan</h3>
+                    <span class="team-role">Senior HR Manager</span>
+                    <p>Expertise in recruitment management, employee coordination, client relations, team operations, and organizational support with a focus on professional efficiency and business growth.</p>
+                </div>
+                <!-- Mohd Shahzad -->
+                <div class="team-card">
+                    <div class="team-avatar">MS</div>
+                    <h3>Mohd Shahzad</h3>
+                    <span class="team-role">Client Relationship Manager</span>
+                    <p>Experienced in client communication, operational coordination, customer relationship management, and business support services, ensuring efficient service handling and professional client engagement.</p>
+                </div>
+                <!-- Md Aamir Siddiqui -->
+                <div class="team-card">
+                    <div class="team-avatar">AS</div>
+                    <h3>Md Aamir Siddiqui</h3>
+                    <span class="team-role">Digital Presence &amp; Technology Lead</span>
+                    <p>Responsible for web development, digital marketing, ad operations, and managing the complete digital ecosystem — ensuring Indo Gulf Audit's online presence, outreach, and technology infrastructure operate at peak performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Core Values -->
-    <section class="py-massive bg-background">
-        <div class="max-w-[1440px] mx-auto px-8 w-full space-y-jumbo">
-            <div class="text-center fade-in-up">
-                <h2 class="font-h2-heading text-h2-heading text-on-surface">The Pillars of Our Practice</h2>
-                <p class="font-body-regular text-body-regular text-on-surface-variant mt-md max-w-3xl mx-auto">The
-                    unshakeable principles that guide every audit, advisory engagement, and client interaction.</p>
+    <section class="py-16 md:py-24 bg-surface">
+        <div class="max-w-[1440px] mx-auto px-8 w-full space-y-12">
+            <div class="text-center animate-fade-in-up">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-on-surface">The Pillars of Our Practice</h2>
+                <p class="text-[15px] leading-7 text-on-surface-variant mt-3 max-w-3xl mx-auto">The unshakeable principles that guide every audit, advisory engagement, and client interaction.</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-xl">
-                <!-- Card 1 -->
-                <div
-                    class="bg-surface p-xl border border-border-light rounded hover:shadow-lg hover:-translate-y-2 transition-all duration-300 fade-in-up flex flex-col items-center text-center">
-                    <div class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center mb-md">
-                        <span class="material-symbols-outlined text-[32px] text-primary-teal"
-                            style="font-variation-settings: 'FILL' 1;">verified_user</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 border border-border-light rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 animate-fade-in-up flex flex-col items-center text-center">
+                    <div class="w-14 h-14 rounded-full bg-primary-teal/10 flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined text-[28px] text-primary-teal" style="font-variation-settings: 'FILL' 1;">verified_user</span>
                     </div>
-                    <h3 class="font-list-item text-list-item text-on-surface mb-sm">Integrity First</h3>
-                    <p class="font-body-regular text-[15px] leading-[28px] text-on-surface-variant">Uncompromising
-                        ethical standards in every engagement, ensuring absolute transparency.</p>
+                    <h3 class="text-base font-bold text-on-surface mb-2">Integrity First</h3>
+                    <p class="text-[14px] leading-6 text-on-surface-variant">Uncompromising ethical standards in every engagement, ensuring absolute transparency.</p>
                 </div>
-                <!-- Card 2 -->
-                <div
-                    class="bg-surface p-xl border border-border-light rounded hover:shadow-lg hover:-translate-y-2 transition-all duration-300 fade-in-up delay-100 flex flex-col items-center text-center">
-                    <div class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center mb-md">
-                        <span class="material-symbols-outlined text-[32px] text-primary-teal"
-                            style="font-variation-settings: 'FILL' 1;">center_focus_strong</span>
+                <div class="bg-white p-8 border border-border-light rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 animate-fade-in-up flex flex-col items-center text-center" style="animation-delay: 0.1s;">
+                    <div class="w-14 h-14 rounded-full bg-primary-teal/10 flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined text-[28px] text-primary-teal" style="font-variation-settings: 'FILL' 1;">center_focus_strong</span>
                     </div>
-                    <h3 class="font-list-item text-list-item text-on-surface mb-sm">Surgical Precision</h3>
-                    <p class="font-body-regular text-[15px] leading-[28px] text-on-surface-variant">Meticulous attention
-                        to detail in financial analysis and regulatory compliance.</p>
+                    <h3 class="text-base font-bold text-on-surface mb-2">Surgical Precision</h3>
+                    <p class="text-[14px] leading-6 text-on-surface-variant">Meticulous attention to detail in financial analysis and regulatory compliance.</p>
                 </div>
-                <!-- Card 3 -->
-                <div
-                    class="bg-surface p-xl border border-border-light rounded hover:shadow-lg hover:-translate-y-2 transition-all duration-300 fade-in-up delay-200 flex flex-col items-center text-center">
-                    <div class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center mb-md">
-                        <span class="material-symbols-outlined text-[32px] text-primary-teal"
-                            style="font-variation-settings: 'FILL' 1;">handshake</span>
+                <div class="bg-white p-8 border border-border-light rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 animate-fade-in-up flex flex-col items-center text-center" style="animation-delay: 0.2s;">
+                    <div class="w-14 h-14 rounded-full bg-primary-teal/10 flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined text-[28px] text-primary-teal" style="font-variation-settings: 'FILL' 1;">handshake</span>
                     </div>
-                    <h3 class="font-list-item text-list-item text-on-surface mb-sm">Client Centricity</h3>
-                    <p class="font-body-regular text-[15px] leading-[28px] text-on-surface-variant">Tailored strategies
-                        designed around your unique operational ecosystem and goals.</p>
+                    <h3 class="text-base font-bold text-on-surface mb-2">Client Centricity</h3>
+                    <p class="text-[14px] leading-6 text-on-surface-variant">Tailored strategies designed around your unique operational ecosystem and goals.</p>
                 </div>
-                <!-- Card 4 -->
-                <div
-                    class="bg-surface p-xl border border-border-light rounded hover:shadow-lg hover:-translate-y-2 transition-all duration-300 fade-in-up delay-300 flex flex-col items-center text-center">
-                    <div class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center mb-md">
-                        <span class="material-symbols-outlined text-[32px] text-primary-teal"
-                            style="font-variation-settings: 'FILL' 1;">visibility</span>
+                <div class="bg-white p-8 border border-border-light rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 animate-fade-in-up flex flex-col items-center text-center" style="animation-delay: 0.3s;">
+                    <div class="w-14 h-14 rounded-full bg-primary-teal/10 flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined text-[28px] text-primary-teal" style="font-variation-settings: 'FILL' 1;">visibility</span>
                     </div>
-                    <h3 class="font-list-item text-list-item text-on-surface mb-sm">Forward Vision</h3>
-                    <p class="font-body-regular text-[15px] leading-[28px] text-on-surface-variant">Anticipating
-                        regulatory shifts to keep your enterprise ahead of the curve.</p>
+                    <h3 class="text-base font-bold text-on-surface mb-2">Forward Vision</h3>
+                    <p class="text-[14px] leading-6 text-on-surface-variant">Anticipating regulatory shifts to keep your enterprise ahead of the curve.</p>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Advisory Process -->
-    <section class="py-massive bg-primary-navy text-on-primary">
+    <section class="py-16 md:py-24 bg-primary-navy text-white">
         <div class="max-w-[1440px] mx-auto px-8 w-full">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-jumbo items-center">
-                <div class="space-y-xl fade-in-up">
-                    <h2 class="font-h2-heading text-h2-heading">Our Structured Advisory Process</h2>
-                    <p class="font-body-large text-body-large text-primary-fixed-dim">A rigorous, three-tiered
-                        methodology ensuring comprehensive oversight and strategic alignment.</p>
-                    <div class="space-y-lg mt-xl">
-                        <div class="flex gap-md">
-                            <div class="font-h5-subheading text-h5-subheading text-warning opacity-80">01</div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="space-y-6 animate-fade-in-up">
+                    <h2 class="text-2xl md:text-3xl font-extrabold">Our Structured Advisory Process</h2>
+                    <p class="text-base text-primary-fixed-dim leading-7">A rigorous, three-tiered methodology ensuring comprehensive oversight and strategic alignment.</p>
+                    <div class="space-y-5 mt-6">
+                        <div class="flex gap-4">
+                            <div class="text-2xl font-extrabold text-amber-400 opacity-80 w-8 flex-shrink-0">01</div>
                             <div>
-                                <h3 class="font-list-item text-list-item font-bold mb-xs">Deep Diagnosis</h3>
-                                <p class="font-body-regular text-[16px] leading-[30px] text-surface-container-high">
-                                    Comprehensive audit of current financial structures, tax liabilities, and
-                                    operational bottlenecks.</p>
+                                <h3 class="text-base font-bold mb-1">Deep Diagnosis</h3>
+                                <p class="text-sm leading-6 text-slate-300">Comprehensive audit of current financial structures, tax liabilities, and operational bottlenecks.</p>
                             </div>
                         </div>
-                        <div class="flex gap-md border-t border-surface-tint/30 pt-lg">
-                            <div class="font-h5-subheading text-h5-subheading text-warning opacity-80">02</div>
+                        <div class="flex gap-4 border-t border-white/20 pt-5">
+                            <div class="text-2xl font-extrabold text-amber-400 opacity-80 w-8 flex-shrink-0">02</div>
                             <div>
-                                <h3 class="font-list-item text-list-item font-bold mb-xs">Strategic Mapping</h3>
-                                <p class="font-body-regular text-[16px] leading-[30px] text-surface-container-high">
-                                    Developing customized frameworks for tax optimization, risk mitigation, and
-                                    compliance architecture.</p>
+                                <h3 class="text-base font-bold mb-1">Strategic Mapping</h3>
+                                <p class="text-sm leading-6 text-slate-300">Developing customized frameworks for tax optimization, risk mitigation, and compliance architecture.</p>
                             </div>
                         </div>
-                        <div class="flex gap-md border-t border-surface-tint/30 pt-lg">
-                            <div class="font-h5-subheading text-h5-subheading text-warning opacity-80">03</div>
+                        <div class="flex gap-4 border-t border-white/20 pt-5">
+                            <div class="text-2xl font-extrabold text-amber-400 opacity-80 w-8 flex-shrink-0">03</div>
                             <div>
-                                <h3 class="font-list-item text-list-item font-bold mb-xs">Execution &amp; Oversight</h3>
-                                <p class="font-body-regular text-[16px] leading-[30px] text-surface-container-high">
-                                    Seamless implementation with ongoing monitoring, ensuring continuous alignment with
-                                    UAE regulatory updates.</p>
+                                <h3 class="text-base font-bold mb-1">Execution &amp; Oversight</h3>
+                                <p class="text-sm leading-6 text-slate-300">Seamless implementation with ongoing monitoring, ensuring continuous alignment with regulatory updates.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="fade-in-up delay-200 hidden lg:block">
-                    <img alt="Financial analysis"
-                        class="rounded-lg shadow-xl w-full h-auto object-cover aspect-[4/5] opacity-90"
-                        data-alt="Close up of professionals reviewing financial documents and charts on a clean modern desk, professional lighting, conveying precision and teamwork"
+                <div class="animate-fade-in-up hidden lg:block" style="animation-delay: 0.2s;">
+                    <img alt="Financial analysis" class="rounded-xl shadow-xl w-full h-auto object-cover aspect-[4/5] opacity-90"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9cSg6RkeTISgPRH8ugL13zKBVbilAwIZwcYq35-cVaajzbfSljSFVFVbhTYIblaf5GSoJVYPgsBTtRUwd7IdHHT8uyL6SxWCVdNEc49w67yiVHCebhXZgXt--4Nrc6p8gPGMF-_DoRHBMf9Lw2qh6_a32KeP2BvSg_7X92E-faM46AgDfLbqWUXIdwhCi1r6dAuaWaRErag6LAxRN1SamkemXZWyNGYnhoqVhmCOboNCIy-J37_6QHKjslSafjunCw3TC-Capvh0" />
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Accounting Software -->
+    <section class="py-12 md:py-16 bg-surface animate-fade-in-up">
+        <div class="max-w-[1440px] mx-auto px-8">
+            <div class="text-center mb-8">
+                <span class="text-sm font-bold text-primary-teal uppercase tracking-widest block mb-2">Software Expertise</span>
+                <h2 class="text-2xl md:text-3xl font-extrabold text-near-black">Accounting Software We Work With</h2>
+            </div>
+            <div class="software-strip">
+                <div class="software-badge"><div class="sw-icon sw-tally">T</div>Tally</div>
+                <div class="software-badge"><div class="sw-icon sw-busy">B</div>Busy</div>
+                <div class="software-badge"><div class="sw-icon sw-quickbooks">Q</div>QuickBooks</div>
+                <div class="software-badge"><div class="sw-icon sw-zoho">Z</div>Zoho Books</div>
+                <div class="software-badge"><div class="sw-icon sw-xero">X</div>Xero</div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
-    <section class="py-massive bg-surface">
-        <div class="max-w-[1000px] mx-auto px-8 w-full fade-in-up">
-            <div
-                class="bg-primary-teal rounded-xl p-jumbo text-center text-on-primary shadow-lg relative overflow-hidden">
-                <div
-                    class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiLz48L3N2Zz4=')]">
-                </div>
-                <div class="relative z-10 space-y-lg">
-                    <h2 class="font-h2-heading text-h2-heading">Elevate Your Financial Governance</h2>
-                    <p class="font-body-large text-body-large text-primary-fixed-dim max-w-2xl mx-auto">
-                        Partner with Indo Gulf Audit to secure your enterprise's financial future with clarity and
-                        absolute confidence.
+    <section class="py-16 md:py-20 bg-background">
+        <div class="max-w-[1000px] mx-auto px-8 w-full animate-fade-in-up">
+            <div class="bg-primary-teal rounded-2xl p-10 md:p-16 text-center text-white shadow-xl relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, #fff 1.5px, transparent 1.5px); background-size: 20px 20px;"></div>
+                <div class="relative z-10 space-y-5">
+                    <h2 class="text-2xl md:text-3xl font-extrabold">Elevate Your Financial Governance</h2>
+                    <p class="text-base text-primary-fixed-dim max-w-2xl mx-auto leading-7">
+                        Partner with Indo Gulf Audit to secure your enterprise's financial future with clarity and absolute confidence.
                     </p>
-                    <div class="flex flex-col sm:flex-row justify-center gap-md pt-md">
-                        <a href="contact.html"
-                            class="bg-cta-blue text-on-primary px-[40px] py-[10px] rounded h-[58px] font-button-text text-button-text hover:bg-secondary transition-colors shadow-md flex items-center justify-center">
+                    <div class="flex flex-col sm:flex-row justify-center gap-3 pt-2">
+                        <a href="contact.html" class="bg-cta-blue text-white px-8 h-[52px] rounded-lg text-sm font-bold hover:bg-opacity-90 transition-colors shadow-md flex items-center justify-center">
                             Schedule a Consultation
                         </a>
                     </div>
@@ -404,62 +361,59 @@
             </div>
         </div>
     </section>
+
     <!-- Footer -->
-    <!-- Footer -->
-    <footer class="w-full py-24 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
-        <div class="max-w-[1440px] mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-x-18 gap-y-12">
-            <div class="col-span-1 md:col-span-1">
-                <span class="text-xl font-bold text-slate-900 dark:text-white mb-6 block">Indo Gulf Audit</span>
-                <p class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+    <footer class="w-full py-16 bg-slate-900 text-slate-300">
+        <div class="max-w-[1440px] mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-x-12 gap-y-10">
+            <div class="md:col-span-1">
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="assets/logo.jpeg" alt="Indo Gulf Audit" class="w-10 h-10 rounded-full border-2 border-amber-400 object-cover" />
+                    <span class="text-lg font-bold text-white">Indo Gulf Audit</span>
+                </div>
+                <p class="text-sm leading-relaxed text-slate-400">
                     A trusted outsourcing partner specializing in end-to-end accounting, bookkeeping, taxation, payroll, and financial reporting services for CPAs, accounting firms, and SMEs across the USA, UAE, Canada, and Australia.
                 </p>
+                <div class="social-links mt-5">
+                    <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                    <a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a href="https://wa.me/message" class="social-link" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+                    <a href="#" class="social-link" aria-label="X / Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                </div>
             </div>
             <div class="col-span-1">
-                <h4 class="font-list-item text-list-item text-near-black mb-md dark:text-white">Quick Links</h4>
-                <ul class="space-y-sm">
-                    <li><a class="font-['Work_Sans'] text-sm leading-relaxed text-cyan-700 font-semibold cursor-pointer"
-                            href="index.html">Home</a></li>
-                    <li><a class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-cyan-700 transition-all duration-200 hover:translate-x-1 cursor-pointer"
-                            href="about.html">About Us</a></li>
-                    <li><a class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-cyan-700 transition-all duration-200 hover:translate-x-1 cursor-pointer"
-                            href="contact.html">Contact Us</a></li>
+                <h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a class="text-sm text-slate-400 hover:text-primary-teal transition-colors" href="index.html">Home</a></li>
+                    <li><a class="text-sm text-slate-400 hover:text-primary-teal transition-colors" href="about.html">About Us</a></li>
+                    <li><a class="text-sm text-slate-400 hover:text-primary-teal transition-colors" href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="col-span-1">
-                <h4 class="font-list-item text-list-item text-near-black mb-md dark:text-white">Services</h4>
-                <ul class="space-y-sm">
-                    <li><a class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-cyan-700 transition-all duration-200 hover:translate-x-1 cursor-pointer"
-                            href="uae-services.html">UAE Services</a></li>
-                    <li><a class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-cyan-700 transition-all duration-200 hover:translate-x-1 cursor-pointer"
-                            href="audit-outsourcing.html">Audit Firm Outsourcing</a></li>
-                    <li><a class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400 hover:text-cyan-700 transition-all duration-200 hover:translate-x-1 cursor-pointer"
-                            href="company-formation.html">Company Formation</a></li>
+                <h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">Services</h4>
+                <ul class="space-y-2">
+                    <li><a class="text-sm text-slate-400 hover:text-primary-teal transition-colors" href="uae-services.html">India &amp; UAE Services</a></li>
+                    <li><a class="text-sm text-slate-400 hover:text-primary-teal transition-colors" href="audit-outsourcing.html">Audit Firm Outsourcing</a></li>
+                    <li><a class="text-sm text-slate-400 hover:text-primary-teal transition-colors" href="company-formation.html">Company Formation</a></li>
                 </ul>
             </div>
-            <div
-                class="col-span-1 md:col-span-3 mt-xl pt-xl border-t border-slate-200 dark:border-slate-800 text-center">
-                <p class="font-['Work_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400">
-                    © 2026 Indo Gulf Audit. All Rights Reserved.
-                </p>
+            <div class="col-span-1">
+                <h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">Software</h4>
+                <ul class="space-y-2">
+                    <li class="text-sm text-slate-400">Tally</li>
+                    <li class="text-sm text-slate-400">Busy</li>
+                    <li class="text-sm text-slate-400">QuickBooks</li>
+                    <li class="text-sm text-slate-400">Zoho Books</li>
+                    <li class="text-sm text-slate-400">Xero</li>
+                </ul>
+            </div>
+            <div class="col-span-1 md:col-span-4 mt-6 pt-6 border-t border-slate-700 text-center">
+                <p class="text-sm text-slate-500">&copy; 2026 Indo Gulf Audit. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-<script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('is-visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1 });
 
-            document.querySelectorAll('.animate-fade-in-up, .fade-in-up').forEach((el) => {
-                observer.observe(el);
-            });
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
